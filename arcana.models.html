@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arcana Models &mdash; Arcana beta documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=88123126"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Arcana Models: Decoders" href="arcana.models.decoders.html" />
+    <link rel="prev" title="Arcana Losses" href="arcana.losses.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Arcana
+          </a>
+              <div class="version">
+                0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">ARCANA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">arcana</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="arcana.html">Arcana package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="arcana.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="arcana.logger.html">Arcana Logger</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.losses.html">Arcana Losses</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Arcana Models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.plots.html">Arcana Plots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.prediction.html">Arcana Prediction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html">Arcana Procedures</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.processing.html">Arcana Processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.regularizations.html">Arcana Regularizations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.training.html">Arcana Training</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.utils.html">Arcana Utils</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.html#module-arcana">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Arcana</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">arcana</a></li>
+          <li class="breadcrumb-item"><a href="arcana.html">Arcana package</a></li>
+      <li class="breadcrumb-item active">Arcana Models</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/arcana.models.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="arcana-models">
+<h1>Arcana Models<a class="headerlink" href="#arcana-models" title="Permalink to this heading"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="arcana.models.decoders.html">Arcana Models: Decoders</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="arcana.models.decoders.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.models.decoders.html#module-arcana.models.decoders.additive_decoder">arcana.models.decoders.additive_decoder module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.models.decoders.html#arcana.models.decoders.additive_decoder.AdditiveDecoder"><code class="docutils literal notranslate"><span class="pre">AdditiveDecoder</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.decoders.html#arcana.models.decoders.additive_decoder.AdditiveDecoder.forward"><code class="docutils literal notranslate"><span class="pre">AdditiveDecoder.forward()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.models.decoders.html#arcana.models.decoders.additive_decoder.Attention"><code class="docutils literal notranslate"><span class="pre">Attention</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.decoders.html#arcana.models.decoders.additive_decoder.Attention.forward"><code class="docutils literal notranslate"><span class="pre">Attention.forward()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.models.decoders.html#module-arcana.models.decoders.base_decoder">arcana.models.decoders.base_decoder module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.models.decoders.html#arcana.models.decoders.base_decoder.BaseDecoder"><code class="docutils literal notranslate"><span class="pre">BaseDecoder</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.decoders.html#arcana.models.decoders.base_decoder.BaseDecoder.forward"><code class="docutils literal notranslate"><span class="pre">BaseDecoder.forward()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.models.decoders.html#arcana.models.decoders.base_decoder.initialize_weights"><code class="docutils literal notranslate"><span class="pre">initialize_weights()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.models.decoders.html#module-arcana.models.decoders.multihead_decoder">arcana.models.decoders.multihead_decoder module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.models.decoders.html#arcana.models.decoders.multihead_decoder.MultiheadDecoder"><code class="docutils literal notranslate"><span class="pre">MultiheadDecoder</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.decoders.html#arcana.models.decoders.multihead_decoder.MultiheadDecoder.forward"><code class="docutils literal notranslate"><span class="pre">MultiheadDecoder.forward()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.models.decoders.html#module-arcana.models.decoders">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arcana.models.encoders.html">Arcana models: encoders</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="arcana.models.encoders.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.models.encoders.html#module-arcana.models.encoders.additive_encoder">arcana.models.encoders.additive_encoder module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.models.encoders.html#arcana.models.encoders.additive_encoder.AdditiveEncoder"><code class="docutils literal notranslate"><span class="pre">AdditiveEncoder</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.encoders.html#arcana.models.encoders.additive_encoder.AdditiveEncoder.forward"><code class="docutils literal notranslate"><span class="pre">AdditiveEncoder.forward()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.models.encoders.html#module-arcana.models.encoders.base_encoder">arcana.models.encoders.base_encoder module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.models.encoders.html#arcana.models.encoders.base_encoder.BaseEncoder"><code class="docutils literal notranslate"><span class="pre">BaseEncoder</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.encoders.html#arcana.models.encoders.base_encoder.BaseEncoder.forward"><code class="docutils literal notranslate"><span class="pre">BaseEncoder.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.encoders.html#arcana.models.encoders.base_encoder.BaseEncoder.reset_hidden_state"><code class="docutils literal notranslate"><span class="pre">BaseEncoder.reset_hidden_state()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.models.encoders.html#module-arcana.models.encoders.multihead_encoder">arcana.models.encoders.multihead_encoder module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.models.encoders.html#arcana.models.encoders.multihead_encoder.MultiheadEncoder"><code class="docutils literal notranslate"><span class="pre">MultiheadEncoder</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.encoders.html#arcana.models.encoders.multihead_encoder.MultiheadEncoder.forward"><code class="docutils literal notranslate"><span class="pre">MultiheadEncoder.forward()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.models.encoders.html#module-arcana.models.encoders">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arcana.models.sequence_to_sequence.html">Arcana Models: sequence_to_sequence</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="arcana.models.sequence_to_sequence.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.models.sequence_to_sequence.html#module-arcana.models.sequence_to_sequence.seq2seq_factory">arcana.models.sequence_to_sequence.seq2seq_factory module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.models.sequence_to_sequence.html#arcana.models.sequence_to_sequence.seq2seq_factory.Seq2SeqFactory"><code class="docutils literal notranslate"><span class="pre">Seq2SeqFactory</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.sequence_to_sequence.html#arcana.models.sequence_to_sequence.seq2seq_factory.Seq2SeqFactory.count_parameters"><code class="docutils literal notranslate"><span class="pre">Seq2SeqFactory.count_parameters()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.sequence_to_sequence.html#arcana.models.sequence_to_sequence.seq2seq_factory.Seq2SeqFactory.create_additive_model"><code class="docutils literal notranslate"><span class="pre">Seq2SeqFactory.create_additive_model()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.sequence_to_sequence.html#arcana.models.sequence_to_sequence.seq2seq_factory.Seq2SeqFactory.create_multihead_model"><code class="docutils literal notranslate"><span class="pre">Seq2SeqFactory.create_multihead_model()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.sequence_to_sequence.html#arcana.models.sequence_to_sequence.seq2seq_factory.Seq2SeqFactory.print_weights"><code class="docutils literal notranslate"><span class="pre">Seq2SeqFactory.print_weights()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.models.sequence_to_sequence.html#module-arcana.models.sequence_to_sequence.sequence_to_sequence">arcana.models.sequence_to_sequence.sequence_to_sequence module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.models.sequence_to_sequence.html#arcana.models.sequence_to_sequence.sequence_to_sequence.Seq2Seq"><code class="docutils literal notranslate"><span class="pre">Seq2Seq</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.sequence_to_sequence.html#arcana.models.sequence_to_sequence.sequence_to_sequence.Seq2Seq.forward"><code class="docutils literal notranslate"><span class="pre">Seq2Seq.forward()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.models.sequence_to_sequence.html#module-arcana.models.sequence_to_sequence">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="module-arcana.models">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-arcana.models" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="arcana.losses.html" class="btn btn-neutral float-left" title="Arcana Losses" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="arcana.models.decoders.html" class="btn btn-neutral float-right" title="Arcana Models: Decoders" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Fuzhan Rahmanian.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

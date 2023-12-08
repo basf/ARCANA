@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arcana Models: Decoders &mdash; Arcana beta documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=88123126"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Arcana models: encoders" href="arcana.models.encoders.html" />
+    <link rel="prev" title="Arcana Models" href="arcana.models.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Arcana
+          </a>
+              <div class="version">
+                0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">ARCANA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">arcana</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="arcana.html">Arcana package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="arcana.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="arcana.logger.html">Arcana Logger</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.losses.html">Arcana Losses</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="arcana.models.html">Arcana Models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.plots.html">Arcana Plots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.prediction.html">Arcana Prediction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html">Arcana Procedures</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.processing.html">Arcana Processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.regularizations.html">Arcana Regularizations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.training.html">Arcana Training</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.utils.html">Arcana Utils</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.html#module-arcana">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Arcana</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">arcana</a></li>
+          <li class="breadcrumb-item"><a href="arcana.html">Arcana package</a></li>
+          <li class="breadcrumb-item"><a href="arcana.models.html">Arcana Models</a></li>
+      <li class="breadcrumb-item active">Arcana Models: Decoders</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/arcana.models.decoders.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="arcana-models-decoders">
+<h1>Arcana Models: Decoders<a class="headerlink" href="#arcana-models-decoders" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-arcana.models.decoders.additive_decoder">
+<span id="arcana-models-decoders-additive-decoder-module"></span><h2>arcana.models.decoders.additive_decoder module<a class="headerlink" href="#module-arcana.models.decoders.additive_decoder" title="Permalink to this heading"></a></h2>
+<p>Additive dencoder module for the ARCANA project.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.models.decoders.additive_decoder.AdditiveDecoder">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.models.decoders.additive_decoder.</span></span><span class="sig-name descname"><span class="pre">AdditiveDecoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.models.decoders.additive_decoder.AdditiveDecoder" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#arcana.models.decoders.base_decoder.BaseDecoder" title="arcana.models.decoders.base_decoder.BaseDecoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseDecoder</span></code></a></p>
+<p>Additive decoder module</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.models.decoders.additive_decoder.AdditiveDecoder.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden_state</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cell_state</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoder_outputs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.models.decoders.additive_decoder.AdditiveDecoder.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Forward pass for additive decoder module. The forward pass is implemented as follows:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>get attention scores</p></li>
+<li><p>create context vector</p></li>
+<li><p>concatenate the context vector with the input tensor</p></li>
+<li><p>pass the concatenated tensor through the lstm layer</p></li>
+<li><p>pass the lstm output through the fc layer</p></li>
+<li><p>pass the fc layer output through the leaky relu layer</p></li>
+<li><p>pass the leaky relu output through the output dropout layer</p></li>
+<li><p>pass the output dropout layer output through the fc layer for quantile 1, 2 and 3</p></li>
+<li><p>concatenate the quantile 1, 2 and 3 predictions</p></li>
+</ol>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x_tensor</strong> (<em>torch.Tensor</em>) – input tensor</p></li>
+<li><p><strong>hidden_state</strong> (<em>torch.Tensor</em>) – hidden state</p></li>
+<li><p><strong>cell_state</strong> (<em>torch.Tensor</em>) – cell state</p></li>
+<li><p><strong>encoder_outputs</strong> (<em>torch.Tensor</em>) – encoder outputs</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>predictions</strong> (<em>tuple</em>) – tuple of quantile predictions</p></li>
+<li><p><strong>hidden_out</strong> (<em>torch.Tensor</em>) – hidden state</p></li>
+<li><p><strong>cell_out</strong> (<em>torch.Tensor</em>) – cell state</p></li>
+<li><p><strong>attention_scores</strong> (<em>torch.Tensor</em>) – attention scores</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.models.decoders.additive_decoder.Attention">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.models.decoders.additive_decoder.</span></span><span class="sig-name descname"><span class="pre">Attention</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.models.decoders.additive_decoder.Attention" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>Additive attention module</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.models.decoders.additive_decoder.Attention.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hidden</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoder_outputs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.models.decoders.additive_decoder.Attention.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Forward pass for additive attention module</p>
+<p>The forward pass is implemented as follows:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>transform the hidden state of the decoder to the same size as the hidden state of the encoder</p></li>
+<li><p>add the transformed hidden state of the decoder and the hidden state of the encoder</p></li>
+<li><p>apply tanh activation to the sum</p></li>
+<li><p>transform the tanh output to a scalar</p></li>
+<li><p>apply softmax to the scalar</p></li>
+</ol>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hidden</strong> (<em>torch.Tensor</em>) – hidden state of the decoder. The shape is (batch_size, hidden_size)</p></li>
+<li><p><strong>encoder_outputs</strong> (<em>torch.Tensor</em>) – hidden state of the encoder. The shape is (batch_size, seq_length, hidden_size)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>attention_scores</strong> (<em>torch.Tensor</em>) – attention scores. The shape is (batch_size, seq_length)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-arcana.models.decoders.base_decoder">
+<span id="arcana-models-decoders-base-decoder-module"></span><h2>arcana.models.decoders.base_decoder module<a class="headerlink" href="#module-arcana.models.decoders.base_decoder" title="Permalink to this heading"></a></h2>
+<p>Base decoder class</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.models.decoders.base_decoder.BaseDecoder">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.models.decoders.base_decoder.</span></span><span class="sig-name descname"><span class="pre">BaseDecoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.models.decoders.base_decoder.BaseDecoder" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>Base decoder module</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.models.decoders.base_decoder.BaseDecoder.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden_state</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cell_state</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoder_outputs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.models.decoders.base_decoder.BaseDecoder.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Forward pass to be implemented by subclass</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="arcana.models.decoders.base_decoder.initialize_weights">
+<span class="sig-prename descclassname"><span class="pre">arcana.models.decoders.base_decoder.</span></span><span class="sig-name descname"><span class="pre">initialize_weights</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">layer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.models.decoders.base_decoder.initialize_weights" title="Permalink to this definition"></a></dt>
+<dd><p>Initialize weights for the layer</p>
+</dd></dl>
+
+</section>
+<section id="module-arcana.models.decoders.multihead_decoder">
+<span id="arcana-models-decoders-multihead-decoder-module"></span><h2>arcana.models.decoders.multihead_decoder module<a class="headerlink" href="#module-arcana.models.decoders.multihead_decoder" title="Permalink to this heading"></a></h2>
+<p>Multihead dencoder module for the ARCANA project.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.models.decoders.multihead_decoder.MultiheadDecoder">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.models.decoders.multihead_decoder.</span></span><span class="sig-name descname"><span class="pre">MultiheadDecoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.models.decoders.multihead_decoder.MultiheadDecoder" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#arcana.models.decoders.base_decoder.BaseDecoder" title="arcana.models.decoders.base_decoder.BaseDecoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseDecoder</span></code></a></p>
+<p>Multihead decoder module</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.models.decoders.multihead_decoder.MultiheadDecoder.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden_state</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cell_state</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoder_outputs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.models.decoders.multihead_decoder.MultiheadDecoder.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Forward pass for multihead decoder module.</p>
+<dl class="simple">
+<dt>The forward pass is implemented as follows:</dt><dd><ol class="arabic simple">
+<li><p>get attention scores</p></li>
+<li><p>concatenate the attention scores with the input tensor</p></li>
+<li><p>pass the concatenated tensor through the lstm layer</p></li>
+<li><p>pass the lstm output through the fc layer</p></li>
+<li><p>pass the fc layer output through the leaky relu layer</p></li>
+<li><p>pass the leaky relu output through the output dropout layer</p></li>
+<li><p>pass the output dropout layer output through the fc layer for quantile 1, 2 and 3</p></li>
+<li><p>concatenate the quantile 1, 2 and 3 predictions</p></li>
+</ol>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x_tensor</strong> (<em>torch.Tensor</em>) – input tensor (batch_size, seq_length, input_size)</p></li>
+<li><p><strong>hidden_state</strong> (<em>torch.Tensor</em>) – hidden state (num_layers, batch_size, hidden_size)</p></li>
+<li><p><strong>cell_state</strong> (<em>torch.Tensor</em>) – cell state (num_layers, batch_size, hidden_size)</p></li>
+<li><p><strong>encoder_outputs</strong> (<em>torch.Tensor</em>) – encoder outputs (batch_size, seq_length, hidden_size)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>predictions</strong> (<em>tuple</em>) – tuple of quantile predictions</p></li>
+<li><p><strong>hidden_out</strong> (<em>torch.Tensor</em>) – hidden state</p></li>
+<li><p><strong>cell_out</strong> (<em>torch.Tensor</em>) – cell state</p></li>
+<li><p><strong>attention_output_weights_probs_decoder</strong> (<em>torch.Tensor</em>) – attention scores</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-arcana.models.decoders">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-arcana.models.decoders" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="arcana.models.html" class="btn btn-neutral float-left" title="Arcana Models" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="arcana.models.encoders.html" class="btn btn-neutral float-right" title="Arcana models: encoders" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Fuzhan Rahmanian.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

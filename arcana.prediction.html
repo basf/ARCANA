@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arcana Prediction &mdash; Arcana beta documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=88123126"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Arcana Procedures" href="arcana.procedures.html" />
+    <link rel="prev" title="Arcana Plots" href="arcana.plots.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Arcana
+          </a>
+              <div class="version">
+                0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">ARCANA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">arcana</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="arcana.html">Arcana package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="arcana.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="arcana.logger.html">Arcana Logger</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.losses.html">Arcana Losses</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.html">Arcana Models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.plots.html">Arcana Plots</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Arcana Prediction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html">Arcana Procedures</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.processing.html">Arcana Processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.regularizations.html">Arcana Regularizations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.training.html">Arcana Training</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.utils.html">Arcana Utils</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.html#module-arcana">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Arcana</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">arcana</a></li>
+          <li class="breadcrumb-item"><a href="arcana.html">Arcana package</a></li>
+      <li class="breadcrumb-item active">Arcana Prediction</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/arcana.prediction.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="arcana-prediction">
+<h1>Arcana Prediction<a class="headerlink" href="#arcana-prediction" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-arcana.prediction.quantile_prediction">
+<span id="arcana-prediction-quantile-prediction-module"></span><h2>arcana.prediction.quantile_prediction module<a class="headerlink" href="#module-arcana.prediction.quantile_prediction" title="Permalink to this heading"></a></h2>
+<p>This module contains the class that predicts with the quantile model</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.prediction.quantile_prediction.QuantilePredictor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.prediction.quantile_prediction.</span></span><span class="sig-name descname"><span class="pre">QuantilePredictor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arcana_procedure</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pretrained_model</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.prediction.quantile_prediction.QuantilePredictor" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Predicting with the quantile model</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.prediction.quantile_prediction.QuantilePredictor.apply_correct_exogenous">
+<span class="sig-name descname"><span class="pre">apply_correct_exogenous</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.prediction.quantile_prediction.QuantilePredictor.apply_correct_exogenous" title="Permalink to this definition"></a></dt>
+<dd><p>Apply the correct exogenous data</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.prediction.quantile_prediction.QuantilePredictor.calculate_metrics">
+<span class="sig-name descname"><span class="pre">calculate_metrics</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.prediction.quantile_prediction.QuantilePredictor.calculate_metrics" title="Permalink to this definition"></a></dt>
+<dd><p>Calculate the metrics of the predictions</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.prediction.quantile_prediction.QuantilePredictor.metrics_preparation">
+<span class="sig-name descname"><span class="pre">metrics_preparation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.prediction.quantile_prediction.QuantilePredictor.metrics_preparation" title="Permalink to this definition"></a></dt>
+<dd><p>Prepare the metrics for prediction</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.prediction.quantile_prediction.QuantilePredictor.plot_analysis">
+<span class="sig-name descname"><span class="pre">plot_analysis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sample_number</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.prediction.quantile_prediction.QuantilePredictor.plot_analysis" title="Permalink to this definition"></a></dt>
+<dd><p>Plot the analysis of the prediction</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>sample_number</strong> (<em>int</em>) – sample number</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.prediction.quantile_prediction.QuantilePredictor.plot_predictions">
+<span class="sig-name descname"><span class="pre">plot_predictions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.prediction.quantile_prediction.QuantilePredictor.plot_predictions" title="Permalink to this definition"></a></dt>
+<dd><p>Helper function that plots the predictions</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.prediction.quantile_prediction.QuantilePredictor.predict_data_preparation">
+<span class="sig-name descname"><span class="pre">predict_data_preparation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_steps_to_predict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample_number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">len_available_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.prediction.quantile_prediction.QuantilePredictor.predict_data_preparation" title="Permalink to this definition"></a></dt>
+<dd><p>Prepare the data for prediction</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_steps_to_predict</strong> (<em>int</em>) – number of steps to predict</p></li>
+<li><p><strong>sample_number</strong> (<em>int</em>) – sample number</p></li>
+<li><p><strong>len_available_label</strong> (<em>int</em>) – length of the available sequence</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.prediction.quantile_prediction.QuantilePredictor.predict_quantiles">
+<span class="sig-name descname"><span class="pre">predict_quantiles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_steps_to_predict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample_number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">len_available_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.prediction.quantile_prediction.QuantilePredictor.predict_quantiles" title="Permalink to this definition"></a></dt>
+<dd><p>Predict the quantiles. This function also saves the attention weights and sensitivity scores</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_steps_to_predict</strong> (<em>int</em>) – number of steps to predict</p></li>
+<li><p><strong>sample_number</strong> (<em>int</em>) – sample number</p></li>
+<li><p><strong>len_available_label</strong> (<em>int</em>) – length of the available sequence</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.prediction.quantile_prediction.QuantilePredictor.save_attention">
+<span class="sig-name descname"><span class="pre">save_attention</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.prediction.quantile_prediction.QuantilePredictor.save_attention" title="Permalink to this definition"></a></dt>
+<dd><p>Save the attention weights</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.prediction.quantile_prediction.QuantilePredictor.save_metrics">
+<span class="sig-name descname"><span class="pre">save_metrics</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.prediction.quantile_prediction.QuantilePredictor.save_metrics" title="Permalink to this definition"></a></dt>
+<dd><p>Helper function that saves the metrics</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.prediction.quantile_prediction.QuantilePredictor.save_predictions">
+<span class="sig-name descname"><span class="pre">save_predictions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.prediction.quantile_prediction.QuantilePredictor.save_predictions" title="Permalink to this definition"></a></dt>
+<dd><p>Save the predictions</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.prediction.quantile_prediction.QuantilePredictor.save_sensitivity">
+<span class="sig-name descname"><span class="pre">save_sensitivity</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.prediction.quantile_prediction.QuantilePredictor.save_sensitivity" title="Permalink to this definition"></a></dt>
+<dd><p>Save the sensitivity scores</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.prediction.quantile_prediction.QuantilePredictor.save_transformed_predictions">
+<span class="sig-name descname"><span class="pre">save_transformed_predictions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.prediction.quantile_prediction.QuantilePredictor.save_transformed_predictions" title="Permalink to this definition"></a></dt>
+<dd><p>Helper function that saves the transformed predictions</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.prediction.quantile_prediction.QuantilePredictor.transform_predictions_to_numpy">
+<span class="sig-name descname"><span class="pre">transform_predictions_to_numpy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.prediction.quantile_prediction.QuantilePredictor.transform_predictions_to_numpy" title="Permalink to this definition"></a></dt>
+<dd><p>Helper function that transform the predictions to numpy and to original scale</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="arcana.prediction.quantile_prediction.metrics_helper">
+<span class="sig-prename descclassname"><span class="pre">arcana.prediction.quantile_prediction.</span></span><span class="sig-name descname"><span class="pre">metrics_helper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target_labels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">predict_labels</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.prediction.quantile_prediction.metrics_helper" title="Permalink to this definition"></a></dt>
+<dd><p>Helper function that calculates the metrics</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>target_labels</strong> (<em>numpy array</em>) – target labels</p></li>
+<li><p><strong>predict_labels</strong> (<em>numpy array</em>) – predicted labels</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>mse_score</strong> (<em>float</em>) – mean squared error</p></li>
+<li><p><strong>rmse_score</strong> (<em>float</em>) – root mean squared error</p></li>
+<li><p><strong>mape_score</strong> (<em>float</em>) – mean absolute percentage error</p></li>
+<li><p><strong>mae_score</strong> (<em>float</em>) – mean absolute error</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-arcana.prediction">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-arcana.prediction" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="arcana.plots.html" class="btn btn-neutral float-left" title="Arcana Plots" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="arcana.procedures.html" class="btn btn-neutral float-right" title="Arcana Procedures" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Fuzhan Rahmanian.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

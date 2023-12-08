@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arcana package &mdash; Arcana beta documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=88123126"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Arcana Logger" href="arcana.logger.html" />
+    <link rel="prev" title="arcana" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Arcana
+          </a>
+              <div class="version">
+                0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">ARCANA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">arcana</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Arcana package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.logger.html">Arcana Logger</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.losses.html">Arcana Losses</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.html">Arcana Models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.plots.html">Arcana Plots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.prediction.html">Arcana Prediction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html">Arcana Procedures</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.processing.html">Arcana Processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.regularizations.html">Arcana Regularizations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.training.html">Arcana Training</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.utils.html">Arcana Utils</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-arcana">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Arcana</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">arcana</a></li>
+      <li class="breadcrumb-item active">Arcana package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/arcana.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="arcana-package">
+<h1>Arcana package<a class="headerlink" href="#arcana-package" title="Permalink to this heading"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="arcana.logger.html">Arcana Logger</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="arcana.logger.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.logger.html#module-arcana.logger.logger">arcana.logger.logger module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.logger.html#arcana.logger.logger.get_logger"><code class="docutils literal notranslate"><span class="pre">get_logger()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.logger.html#arcana.logger.logger.setup_applevel_logger"><code class="docutils literal notranslate"><span class="pre">setup_applevel_logger()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.logger.html#module-arcana.logger">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arcana.losses.html">Arcana Losses</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="arcana.losses.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.losses.html#module-arcana.losses.loss">arcana.losses.loss module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.losses.html#arcana.losses.loss.CombinedHPLoss"><code class="docutils literal notranslate"><span class="pre">CombinedHPLoss</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.losses.html#arcana.losses.loss.CombinedHPLoss.forward"><code class="docutils literal notranslate"><span class="pre">CombinedHPLoss.forward()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.losses.html#arcana.losses.loss.CombinedLPLoss"><code class="docutils literal notranslate"><span class="pre">CombinedLPLoss</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.losses.html#arcana.losses.loss.CombinedLPLoss.forward"><code class="docutils literal notranslate"><span class="pre">CombinedLPLoss.forward()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.losses.html#arcana.losses.loss.HuberLoss"><code class="docutils literal notranslate"><span class="pre">HuberLoss</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.losses.html#arcana.losses.loss.LogCoshLoss"><code class="docutils literal notranslate"><span class="pre">LogCoshLoss</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.losses.html#arcana.losses.loss.LogCoshLoss.forward"><code class="docutils literal notranslate"><span class="pre">LogCoshLoss.forward()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.losses.html#arcana.losses.loss.LossFactory"><code class="docutils literal notranslate"><span class="pre">LossFactory</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.losses.html#arcana.losses.loss.LossFactory.create_loss"><code class="docutils literal notranslate"><span class="pre">LossFactory.create_loss()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.losses.html#arcana.losses.loss.MSELoss"><code class="docutils literal notranslate"><span class="pre">MSELoss</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.losses.html#arcana.losses.loss.PinballLoss"><code class="docutils literal notranslate"><span class="pre">PinballLoss</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.losses.html#arcana.losses.loss.PinballLoss.forward"><code class="docutils literal notranslate"><span class="pre">PinballLoss.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.losses.html#arcana.losses.loss.PinballLoss.pinball_loss_numpy"><code class="docutils literal notranslate"><span class="pre">PinballLoss.pinball_loss_numpy()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.losses.html#arcana.losses.loss.QuantileLoss"><code class="docutils literal notranslate"><span class="pre">QuantileLoss</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.losses.html#arcana.losses.loss.QuantileLoss.forward"><code class="docutils literal notranslate"><span class="pre">QuantileLoss.forward()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.losses.html#arcana.losses.loss.is_numpy"><code class="docutils literal notranslate"><span class="pre">is_numpy()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.losses.html#arcana.losses.loss.is_tensor"><code class="docutils literal notranslate"><span class="pre">is_tensor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.losses.html#arcana.losses.loss.to_numpy"><code class="docutils literal notranslate"><span class="pre">to_numpy()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.losses.html#arcana.losses.loss.to_tensor"><code class="docutils literal notranslate"><span class="pre">to_tensor()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.losses.html#module-arcana.losses.loss_trace">arcana.losses.loss_trace module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.losses.html#arcana.losses.loss_trace.LossTrace"><code class="docutils literal notranslate"><span class="pre">LossTrace</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.losses.html#arcana.losses.loss_trace.LossTrace.calculate_batch_loss_train"><code class="docutils literal notranslate"><span class="pre">LossTrace.calculate_batch_loss_train()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.losses.html#arcana.losses.loss_trace.LossTrace.calculate_batch_loss_validation"><code class="docutils literal notranslate"><span class="pre">LossTrace.calculate_batch_loss_validation()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.losses.html#arcana.losses.loss_trace.LossTrace.calculate_epoch_loss"><code class="docutils literal notranslate"><span class="pre">LossTrace.calculate_epoch_loss()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.losses.html#arcana.losses.loss_trace.LossTrace.reset_temp_loss_trace"><code class="docutils literal notranslate"><span class="pre">LossTrace.reset_temp_loss_trace()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.losses.html#module-arcana.losses">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arcana.models.html">Arcana Models</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="arcana.models.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.models.decoders.html">Arcana Models: Decoders</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.decoders.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.decoders.html#module-arcana.models.decoders.additive_decoder">arcana.models.decoders.additive_decoder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.decoders.html#module-arcana.models.decoders.base_decoder">arcana.models.decoders.base_decoder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.decoders.html#module-arcana.models.decoders.multihead_decoder">arcana.models.decoders.multihead_decoder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.decoders.html#module-arcana.models.decoders">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.models.encoders.html">Arcana models: encoders</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.encoders.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.encoders.html#module-arcana.models.encoders.additive_encoder">arcana.models.encoders.additive_encoder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.encoders.html#module-arcana.models.encoders.base_encoder">arcana.models.encoders.base_encoder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.encoders.html#module-arcana.models.encoders.multihead_encoder">arcana.models.encoders.multihead_encoder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.encoders.html#module-arcana.models.encoders">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.models.sequence_to_sequence.html">Arcana Models: sequence_to_sequence</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.sequence_to_sequence.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.sequence_to_sequence.html#module-arcana.models.sequence_to_sequence.seq2seq_factory">arcana.models.sequence_to_sequence.seq2seq_factory module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.sequence_to_sequence.html#module-arcana.models.sequence_to_sequence.sequence_to_sequence">arcana.models.sequence_to_sequence.sequence_to_sequence module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.sequence_to_sequence.html#module-arcana.models.sequence_to_sequence">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.models.html#module-arcana.models">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arcana.plots.html">Arcana Plots</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="arcana.plots.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.plots.html#module-arcana.plots.analysis_plot_utils">arcana.plots.analysis_plot_utils module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.plots.html#arcana.plots.analysis_plot_utils.AnalysisPlotUtils"><code class="docutils literal notranslate"><span class="pre">AnalysisPlotUtils</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.plots.html#arcana.plots.analysis_plot_utils.AnalysisPlotUtils.plot_additive_attention"><code class="docutils literal notranslate"><span class="pre">AnalysisPlotUtils.plot_additive_attention()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.plots.html#arcana.plots.analysis_plot_utils.AnalysisPlotUtils.plot_all_multihead_attention"><code class="docutils literal notranslate"><span class="pre">AnalysisPlotUtils.plot_all_multihead_attention()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.plots.html#arcana.plots.analysis_plot_utils.AnalysisPlotUtils.plot_sensitivity_analyis"><code class="docutils literal notranslate"><span class="pre">AnalysisPlotUtils.plot_sensitivity_analyis()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.plots.html#arcana.plots.analysis_plot_utils.ScalarFormatterForceFormat"><code class="docutils literal notranslate"><span class="pre">ScalarFormatterForceFormat</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.plots.html#module-arcana.plots.plot_utils">arcana.plots.plot_utils module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.plots.html#arcana.plots.plot_utils.plot_model_learning_rate"><code class="docutils literal notranslate"><span class="pre">plot_model_learning_rate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.plots.html#arcana.plots.plot_utils.plot_sample_prediction"><code class="docutils literal notranslate"><span class="pre">plot_sample_prediction()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.plots.html#arcana.plots.plot_utils.plot_train_val_loss"><code class="docutils literal notranslate"><span class="pre">plot_train_val_loss()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.plots.html#arcana.plots.plot_utils.plot_train_val_loss_individual"><code class="docutils literal notranslate"><span class="pre">plot_train_val_loss_individual()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.plots.html#module-arcana.plots.plots">arcana.plots.plots module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.plots.html#arcana.plots.plots.Plots"><code class="docutils literal notranslate"><span class="pre">Plots</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.plots.html#arcana.plots.plots.Plots.plot_line"><code class="docutils literal notranslate"><span class="pre">Plots.plot_line()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.plots.html#arcana.plots.plots.Plots.plot_scatter"><code class="docutils literal notranslate"><span class="pre">Plots.plot_scatter()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.plots.html#arcana.plots.plots.Plots.set_labels"><code class="docutils literal notranslate"><span class="pre">Plots.set_labels()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.plots.html#module-arcana.plots">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arcana.prediction.html">Arcana Prediction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="arcana.prediction.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.prediction.html#module-arcana.prediction.quantile_prediction">arcana.prediction.quantile_prediction module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.prediction.html#arcana.prediction.quantile_prediction.QuantilePredictor"><code class="docutils literal notranslate"><span class="pre">QuantilePredictor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.prediction.html#arcana.prediction.quantile_prediction.QuantilePredictor.apply_correct_exogenous"><code class="docutils literal notranslate"><span class="pre">QuantilePredictor.apply_correct_exogenous()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.prediction.html#arcana.prediction.quantile_prediction.QuantilePredictor.calculate_metrics"><code class="docutils literal notranslate"><span class="pre">QuantilePredictor.calculate_metrics()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.prediction.html#arcana.prediction.quantile_prediction.QuantilePredictor.metrics_preparation"><code class="docutils literal notranslate"><span class="pre">QuantilePredictor.metrics_preparation()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.prediction.html#arcana.prediction.quantile_prediction.QuantilePredictor.plot_analysis"><code class="docutils literal notranslate"><span class="pre">QuantilePredictor.plot_analysis()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.prediction.html#arcana.prediction.quantile_prediction.QuantilePredictor.plot_predictions"><code class="docutils literal notranslate"><span class="pre">QuantilePredictor.plot_predictions()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.prediction.html#arcana.prediction.quantile_prediction.QuantilePredictor.predict_data_preparation"><code class="docutils literal notranslate"><span class="pre">QuantilePredictor.predict_data_preparation()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.prediction.html#arcana.prediction.quantile_prediction.QuantilePredictor.predict_quantiles"><code class="docutils literal notranslate"><span class="pre">QuantilePredictor.predict_quantiles()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.prediction.html#arcana.prediction.quantile_prediction.QuantilePredictor.save_attention"><code class="docutils literal notranslate"><span class="pre">QuantilePredictor.save_attention()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.prediction.html#arcana.prediction.quantile_prediction.QuantilePredictor.save_metrics"><code class="docutils literal notranslate"><span class="pre">QuantilePredictor.save_metrics()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.prediction.html#arcana.prediction.quantile_prediction.QuantilePredictor.save_predictions"><code class="docutils literal notranslate"><span class="pre">QuantilePredictor.save_predictions()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.prediction.html#arcana.prediction.quantile_prediction.QuantilePredictor.save_sensitivity"><code class="docutils literal notranslate"><span class="pre">QuantilePredictor.save_sensitivity()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.prediction.html#arcana.prediction.quantile_prediction.QuantilePredictor.save_transformed_predictions"><code class="docutils literal notranslate"><span class="pre">QuantilePredictor.save_transformed_predictions()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.prediction.html#arcana.prediction.quantile_prediction.QuantilePredictor.transform_predictions_to_numpy"><code class="docutils literal notranslate"><span class="pre">QuantilePredictor.transform_predictions_to_numpy()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.prediction.html#arcana.prediction.quantile_prediction.metrics_helper"><code class="docutils literal notranslate"><span class="pre">metrics_helper()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.prediction.html#module-arcana.prediction">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arcana.procedures.html">Arcana Procedures</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="arcana.procedures.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.procedures.html#module-arcana.procedures.config_handler">arcana.procedures.config_handler module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.ConfigHandler"><code class="docutils literal notranslate"><span class="pre">ConfigHandler</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.ConfigHandler.get_data_config"><code class="docutils literal notranslate"><span class="pre">ConfigHandler.get_data_config()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.ConfigHandler.get_general_config"><code class="docutils literal notranslate"><span class="pre">ConfigHandler.get_general_config()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.ConfigHandler.get_model_config"><code class="docutils literal notranslate"><span class="pre">ConfigHandler.get_model_config()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.ConfigHandler.get_procedure_config"><code class="docutils literal notranslate"><span class="pre">ConfigHandler.get_procedure_config()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.DataConfig"><code class="docutils literal notranslate"><span class="pre">DataConfig</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.DataConfig.data_headers"><code class="docutils literal notranslate"><span class="pre">DataConfig.data_headers</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.DataConfig.maximum_available_cycles"><code class="docutils literal notranslate"><span class="pre">DataConfig.maximum_available_cycles</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.DataConfig.number_of_samples"><code class="docutils literal notranslate"><span class="pre">DataConfig.number_of_samples</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.DataConfig.path_to_config"><code class="docutils literal notranslate"><span class="pre">DataConfig.path_to_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.DataConfig.test_sample"><code class="docutils literal notranslate"><span class="pre">DataConfig.test_sample</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.DataConfig.train_ratio"><code class="docutils literal notranslate"><span class="pre">DataConfig.train_ratio</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.DataConfig.val_test_ratio"><code class="docutils literal notranslate"><span class="pre">DataConfig.val_test_ratio</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.GeneralConfig"><code class="docutils literal notranslate"><span class="pre">GeneralConfig</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.GeneralConfig.data_name"><code class="docutils literal notranslate"><span class="pre">GeneralConfig.data_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.GeneralConfig.input_data_folder"><code class="docutils literal notranslate"><span class="pre">GeneralConfig.input_data_folder</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.GeneralConfig.path_to_config"><code class="docutils literal notranslate"><span class="pre">GeneralConfig.path_to_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.GeneralConfig.pretrained_model"><code class="docutils literal notranslate"><span class="pre">GeneralConfig.pretrained_model</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.GeneralConfig.scaler_model"><code class="docutils literal notranslate"><span class="pre">GeneralConfig.scaler_model</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.GeneralConfig.test_id"><code class="docutils literal notranslate"><span class="pre">GeneralConfig.test_id</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.ModelConfig"><code class="docutils literal notranslate"><span class="pre">ModelConfig</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.ModelConfig.read_tuning_conf"><code class="docutils literal notranslate"><span class="pre">ModelConfig.read_tuning_conf()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.ProcedureConfig"><code class="docutils literal notranslate"><span class="pre">ProcedureConfig</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.ProcedureConfig.attention_type"><code class="docutils literal notranslate"><span class="pre">ProcedureConfig.attention_type</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.ProcedureConfig.learning_rate_type"><code class="docutils literal notranslate"><span class="pre">ProcedureConfig.learning_rate_type</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.ProcedureConfig.naive_training"><code class="docutils literal notranslate"><span class="pre">ProcedureConfig.naive_training</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.ProcedureConfig.number_of_trials"><code class="docutils literal notranslate"><span class="pre">ProcedureConfig.number_of_trials</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.ProcedureConfig.optuna_tuning"><code class="docutils literal notranslate"><span class="pre">ProcedureConfig.optuna_tuning</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.ProcedureConfig.path_to_config"><code class="docutils literal notranslate"><span class="pre">ProcedureConfig.path_to_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.ProcedureConfig.predicting"><code class="docutils literal notranslate"><span class="pre">ProcedureConfig.predicting</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.ProcedureConfig.preprocess_data"><code class="docutils literal notranslate"><span class="pre">ProcedureConfig.preprocess_data</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.ProcedureConfig.transfer_learning"><code class="docutils literal notranslate"><span class="pre">ProcedureConfig.transfer_learning</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.procedures.html#module-arcana.procedures.predicting">arcana.procedures.predicting module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.predicting.PredictProcedure"><code class="docutils literal notranslate"><span class="pre">PredictProcedure</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.predicting.PredictProcedure.all_preparation"><code class="docutils literal notranslate"><span class="pre">PredictProcedure.all_preparation()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.predicting.PredictProcedure.get_pretrained_model"><code class="docutils literal notranslate"><span class="pre">PredictProcedure.get_pretrained_model()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.predicting.PredictProcedure.get_test_data"><code class="docutils literal notranslate"><span class="pre">PredictProcedure.get_test_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.predicting.PredictProcedure.predicting"><code class="docutils literal notranslate"><span class="pre">PredictProcedure.predicting()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.predicting.PredictProcedure.predicting_all"><code class="docutils literal notranslate"><span class="pre">PredictProcedure.predicting_all()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.predicting.PredictProcedure.preparation"><code class="docutils literal notranslate"><span class="pre">PredictProcedure.preparation()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.procedures.html#module-arcana.procedures.training">arcana.procedures.training module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.training.TrainProcedure"><code class="docutils literal notranslate"><span class="pre">TrainProcedure</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.training.TrainProcedure.data_splits"><code class="docutils literal notranslate"><span class="pre">TrainProcedure.data_splits()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.training.TrainProcedure.loader_initialization"><code class="docutils literal notranslate"><span class="pre">TrainProcedure.loader_initialization()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.training.TrainProcedure.model_parameter_initialization"><code class="docutils literal notranslate"><span class="pre">TrainProcedure.model_parameter_initialization()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.training.TrainProcedure.save_data_splits"><code class="docutils literal notranslate"><span class="pre">TrainProcedure.save_data_splits()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.training.TrainProcedure.save_model_parameters"><code class="docutils literal notranslate"><span class="pre">TrainProcedure.save_model_parameters()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.training.TrainProcedure.set_device"><code class="docutils literal notranslate"><span class="pre">TrainProcedure.set_device()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.training.TrainProcedure.train_element_initialization"><code class="docutils literal notranslate"><span class="pre">TrainProcedure.train_element_initialization()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.training.TrainProcedure.training"><code class="docutils literal notranslate"><span class="pre">TrainProcedure.training()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.procedures.html#module-arcana.procedures.tuning">arcana.procedures.tuning module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.tuning.TuneProcedure"><code class="docutils literal notranslate"><span class="pre">TuneProcedure</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.tuning.TuneProcedure.rename_trials"><code class="docutils literal notranslate"><span class="pre">TuneProcedure.rename_trials()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.tuning.TuneProcedure.save_tuning_params"><code class="docutils literal notranslate"><span class="pre">TuneProcedure.save_tuning_params()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html#arcana.procedures.tuning.TuneProcedure.tuning"><code class="docutils literal notranslate"><span class="pre">TuneProcedure.tuning()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.procedures.html#module-arcana.procedures">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arcana.processing.html">Arcana Processing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="arcana.processing.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.processing.html#module-arcana.processing.data_processing">arcana.processing.data_processing module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.processing.html#arcana.processing.data_processing.DataPreparation"><code class="docutils literal notranslate"><span class="pre">DataPreparation</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.processing.html#arcana.processing.data_processing.DataPreparation.data_splits"><code class="docutils literal notranslate"><span class="pre">DataPreparation.data_splits()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.processing.html#arcana.processing.data_processing.DataPreparation.get_data_for_model"><code class="docutils literal notranslate"><span class="pre">DataPreparation.get_data_for_model()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.processing.html#arcana.processing.data_processing.DataPreparation.get_max_available_scaled_cycle"><code class="docutils literal notranslate"><span class="pre">DataPreparation.get_max_available_scaled_cycle()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.processing.html#arcana.processing.data_processing.DataPreparation.pad_the_splits"><code class="docutils literal notranslate"><span class="pre">DataPreparation.pad_the_splits()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.processing.html#arcana.processing.data_processing.DataPreparation.prepare_data_for_model"><code class="docutils literal notranslate"><span class="pre">DataPreparation.prepare_data_for_model()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.processing.html#arcana.processing.data_processing.DataPreparation.prepare_test_data_for_pretrained_model"><code class="docutils literal notranslate"><span class="pre">DataPreparation.prepare_test_data_for_pretrained_model()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.processing.html#arcana.processing.data_processing.DataPreparation.standardize_data"><code class="docutils literal notranslate"><span class="pre">DataPreparation.standardize_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.processing.html#arcana.processing.data_processing.DataPreparation.tensorized_and_pad"><code class="docutils literal notranslate"><span class="pre">DataPreparation.tensorized_and_pad()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.processing.html#module-arcana.processing">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arcana.regularizations.html">Arcana Regularizations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="arcana.regularizations.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.regularizations.html#module-arcana.regularizations.optimizer_scheduler">arcana.regularizations.optimizer_scheduler module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.regularizations.html#arcana.regularizations.optimizer_scheduler.SchedulerFactory"><code class="docutils literal notranslate"><span class="pre">SchedulerFactory</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.regularizations.html#arcana.regularizations.optimizer_scheduler.SchedulerFactory.get_scheduler"><code class="docutils literal notranslate"><span class="pre">SchedulerFactory.get_scheduler()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.regularizations.html#module-arcana.regularizations.stopping_criteria">arcana.regularizations.stopping_criteria module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.regularizations.html#arcana.regularizations.stopping_criteria.EarlyStopping"><code class="docutils literal notranslate"><span class="pre">EarlyStopping</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.regularizations.html#arcana.regularizations.stopping_criteria.EarlyStopping.step"><code class="docutils literal notranslate"><span class="pre">EarlyStopping.step()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.regularizations.html#module-arcana.regularizations.teacher_forcing">arcana.regularizations.teacher_forcing module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.regularizations.html#arcana.regularizations.teacher_forcing.TeacherForcingScheduler"><code class="docutils literal notranslate"><span class="pre">TeacherForcingScheduler</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.regularizations.html#arcana.regularizations.teacher_forcing.TeacherForcingScheduler.get_ratio"><code class="docutils literal notranslate"><span class="pre">TeacherForcingScheduler.get_ratio()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.regularizations.html#module-arcana.regularizations">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arcana.training.html">Arcana Training</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="arcana.training.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.training.html#module-arcana.training.train_model">arcana.training.train_model module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.training.html#arcana.training.train_model.Seq2SeqTrainer"><code class="docutils literal notranslate"><span class="pre">Seq2SeqTrainer</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="arcana.training.html#arcana.training.train_model.Seq2SeqTrainer.calculate_overall_combined_loss"><code class="docutils literal notranslate"><span class="pre">Seq2SeqTrainer.calculate_overall_combined_loss()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.training.html#arcana.training.train_model.Seq2SeqTrainer.calculate_overall_loss"><code class="docutils literal notranslate"><span class="pre">Seq2SeqTrainer.calculate_overall_loss()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.training.html#arcana.training.train_model.Seq2SeqTrainer.compute_loss"><code class="docutils literal notranslate"><span class="pre">Seq2SeqTrainer.compute_loss()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.training.html#arcana.training.train_model.Seq2SeqTrainer.count_parameters"><code class="docutils literal notranslate"><span class="pre">Seq2SeqTrainer.count_parameters()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.training.html#arcana.training.train_model.Seq2SeqTrainer.early_stopping_check"><code class="docutils literal notranslate"><span class="pre">Seq2SeqTrainer.early_stopping_check()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.training.html#arcana.training.train_model.Seq2SeqTrainer.initialize_training"><code class="docutils literal notranslate"><span class="pre">Seq2SeqTrainer.initialize_training()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.training.html#arcana.training.train_model.Seq2SeqTrainer.plot_training_params"><code class="docutils literal notranslate"><span class="pre">Seq2SeqTrainer.plot_training_params()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.training.html#arcana.training.train_model.Seq2SeqTrainer.save_training_results_and_plots"><code class="docutils literal notranslate"><span class="pre">Seq2SeqTrainer.save_training_results_and_plots()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.training.html#arcana.training.train_model.Seq2SeqTrainer.train_epoch"><code class="docutils literal notranslate"><span class="pre">Seq2SeqTrainer.train_epoch()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.training.html#arcana.training.train_model.Seq2SeqTrainer.train_model"><code class="docutils literal notranslate"><span class="pre">Seq2SeqTrainer.train_model()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.training.html#arcana.training.train_model.Seq2SeqTrainer.update_training_params"><code class="docutils literal notranslate"><span class="pre">Seq2SeqTrainer.update_training_params()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.training.html#arcana.training.train_model.Seq2SeqTrainer.validation_epoch"><code class="docutils literal notranslate"><span class="pre">Seq2SeqTrainer.validation_epoch()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.training.html#module-arcana.training">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arcana.utils.html">Arcana Utils</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="arcana.utils.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.utils.html#module-arcana.utils.utils">arcana.utils.utils module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arcana.utils.html#arcana.utils.utils.align_and_truncate_samples"><code class="docutils literal notranslate"><span class="pre">align_and_truncate_samples()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.utils.html#arcana.utils.utils.create_dir"><code class="docutils literal notranslate"><span class="pre">create_dir()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.utils.html#arcana.utils.utils.handle_tensor"><code class="docutils literal notranslate"><span class="pre">handle_tensor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.utils.html#arcana.utils.utils.pad_array_to_length"><code class="docutils literal notranslate"><span class="pre">pad_array_to_length()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.utils.html#arcana.utils.utils.prepare_folder_structure"><code class="docutils literal notranslate"><span class="pre">prepare_folder_structure()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.utils.html#arcana.utils.utils.prepare_optuna_folder_structure"><code class="docutils literal notranslate"><span class="pre">prepare_optuna_folder_structure()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.utils.html#arcana.utils.utils.save_optuna_fig"><code class="docutils literal notranslate"><span class="pre">save_optuna_fig()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.utils.html#arcana.utils.utils.save_plots"><code class="docutils literal notranslate"><span class="pre">save_plots()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.utils.html#arcana.utils.utils.save_test_data"><code class="docutils literal notranslate"><span class="pre">save_test_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.utils.html#arcana.utils.utils.standardize_dataset"><code class="docutils literal notranslate"><span class="pre">standardize_dataset()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arcana.utils.html#module-arcana.utils">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="module-arcana">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-arcana" title="Permalink to this heading"></a></h2>
+<p>Top-level package for Arcana.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="arcana" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="arcana.logger.html" class="btn btn-neutral float-right" title="Arcana Logger" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Fuzhan Rahmanian.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

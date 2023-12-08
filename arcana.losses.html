@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arcana Losses &mdash; Arcana beta documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=88123126"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Arcana Models" href="arcana.models.html" />
+    <link rel="prev" title="Arcana Logger" href="arcana.logger.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Arcana
+          </a>
+              <div class="version">
+                0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">ARCANA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">arcana</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="arcana.html">Arcana package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="arcana.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="arcana.logger.html">Arcana Logger</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Arcana Losses</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.html">Arcana Models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.plots.html">Arcana Plots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.prediction.html">Arcana Prediction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html">Arcana Procedures</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.processing.html">Arcana Processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.regularizations.html">Arcana Regularizations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.training.html">Arcana Training</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.utils.html">Arcana Utils</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.html#module-arcana">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Arcana</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">arcana</a></li>
+          <li class="breadcrumb-item"><a href="arcana.html">Arcana package</a></li>
+      <li class="breadcrumb-item active">Arcana Losses</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/arcana.losses.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="arcana-losses">
+<h1>Arcana Losses<a class="headerlink" href="#arcana-losses" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-arcana.losses.loss">
+<span id="arcana-losses-loss-module"></span><h2>arcana.losses.loss module<a class="headerlink" href="#module-arcana.losses.loss" title="Permalink to this heading"></a></h2>
+<p>Custom loss module.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.losses.loss.CombinedHPLoss">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.losses.loss.</span></span><span class="sig-name descname"><span class="pre">CombinedHPLoss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.losses.loss.CombinedHPLoss" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>Combined huberized pinball loss for quantile regression.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.losses.loss.CombinedHPLoss.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">predicted</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.losses.loss.CombinedHPLoss.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the combined huberized quantile loss.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>predicted</strong> (<em>torch.Tensor</em><em> or </em><em>np.ndarray</em>) – predicted values</p></li>
+<li><p><strong>target</strong> (<em>torch.Tensor</em><em> or </em><em>np.ndarray</em>) – target values</p></li>
+<li><p><strong>mask</strong> (<em>torch.Tensor</em><em> or </em><em>np.ndarray</em>) – mask to apply to the loss (optional. Default: None)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>torch.Tensor or np.ndarray</strong> – mean loss</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.losses.loss.CombinedLPLoss">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.losses.loss.</span></span><span class="sig-name descname"><span class="pre">CombinedLPLoss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.losses.loss.CombinedLPLoss" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>Combined logcosh pinball loss for quantile regression.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.losses.loss.CombinedLPLoss.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">predicted</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.losses.loss.CombinedLPLoss.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the combined logcosh quantile loss.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>predicted</strong> (<em>torch.Tensor</em><em> or </em><em>np.ndarray</em>) – predicted values</p></li>
+<li><p><strong>target</strong> (<em>torch.Tensor</em><em> or </em><em>np.ndarray</em>) – target values</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>torch.Tensor or np.ndarray</strong> – mean loss</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.losses.loss.HuberLoss">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.losses.loss.</span></span><span class="sig-name descname"><span class="pre">HuberLoss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">delta</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.losses.loss.HuberLoss" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Huber loss for quantile regression.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.losses.loss.LogCoshLoss">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.losses.loss.</span></span><span class="sig-name descname"><span class="pre">LogCoshLoss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.losses.loss.LogCoshLoss" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>Log-cosh loss for quantile regression.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.losses.loss.LogCoshLoss.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">predicted</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.losses.loss.LogCoshLoss.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the log-cosh loss.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>predicted</strong> (<em>torch.Tensor</em><em> or </em><em>np.ndarray</em>) – predicted values</p></li>
+<li><p><strong>target</strong> (<em>torch.Tensor</em><em> or </em><em>np.ndarray</em>) – target values</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>torch.Tensor or np.ndarray</strong> – mean loss</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.losses.loss.LossFactory">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.losses.loss.</span></span><span class="sig-name descname"><span class="pre">LossFactory</span></span><a class="headerlink" href="#arcana.losses.loss.LossFactory" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Factory class for losses.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.losses.loss.LossFactory.create_loss">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">create_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.losses.loss.LossFactory.create_loss" title="Permalink to this definition"></a></dt>
+<dd><p>Create a loss.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>config</strong> (<a class="reference internal" href="arcana.procedures.html#arcana.procedures.config_handler.ModelConfig" title="arcana.procedures.config_handler.ModelConfig"><em>ModelConfig</em></a>) – model config</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>torch.nn.Module</strong> – loss function</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.losses.loss.MSELoss">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.losses.loss.</span></span><span class="sig-name descname"><span class="pre">MSELoss</span></span><a class="headerlink" href="#arcana.losses.loss.MSELoss" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Mean squared error loss.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.losses.loss.PinballLoss">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.losses.loss.</span></span><span class="sig-name descname"><span class="pre">PinballLoss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.losses.loss.PinballLoss" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>Pinball loss for quantile regression.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.losses.loss.PinballLoss.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">predicted</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.losses.loss.PinballLoss.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the pinball loss.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>predicted</strong> (<em>torch.Tensor</em><em> or </em><em>np.ndarray</em>) – predicted values</p></li>
+<li><p><strong>target</strong> (<em>torch.Tensor</em><em> or </em><em>np.ndarray</em>) – target values</p></li>
+<li><p><strong>mask</strong> (<em>torch.Tensor</em><em> or </em><em>np.ndarray</em>) – mask to apply to the loss (optional. Default: None)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>torch.Tensor or np.ndarray</strong> – mean loss</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.losses.loss.PinballLoss.pinball_loss_numpy">
+<span class="sig-name descname"><span class="pre">pinball_loss_numpy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">predicted</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantiles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.losses.loss.PinballLoss.pinball_loss_numpy" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the pinball loss.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.losses.loss.QuantileLoss">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.losses.loss.</span></span><span class="sig-name descname"><span class="pre">QuantileLoss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.losses.loss.QuantileLoss" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>Quantile loss for quantile regression.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.losses.loss.QuantileLoss.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">predicted</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.losses.loss.QuantileLoss.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the quantile loss.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>predicted</strong> (<em>torch.Tensor</em><em> or </em><em>np.ndarray</em>) – predicted values</p></li>
+<li><p><strong>target</strong> (<em>torch.Tensor</em><em> or </em><em>np.ndarray</em>) – target values</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>torch.Tensor or np.ndarray</strong> – mean loss</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="arcana.losses.loss.is_numpy">
+<span class="sig-prename descclassname"><span class="pre">arcana.losses.loss.</span></span><span class="sig-name descname"><span class="pre">is_numpy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_vector</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.losses.loss.is_numpy" title="Permalink to this definition"></a></dt>
+<dd><p>Check if x is a numpy array.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x_vector</strong> (<em>torch.Tensor</em><em> or </em><em>np.ndarray</em>) – input vector</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>bool</strong> – True if x is a numpy array, False otherwise</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="arcana.losses.loss.is_tensor">
+<span class="sig-prename descclassname"><span class="pre">arcana.losses.loss.</span></span><span class="sig-name descname"><span class="pre">is_tensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_vector</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.losses.loss.is_tensor" title="Permalink to this definition"></a></dt>
+<dd><p>Check if x is a tensor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x_vector</strong> (<em>torch.Tensor</em><em> or </em><em>np.ndarray</em>) – input vector</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>bool</strong> – True if x is a tensor, False otherwise</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="arcana.losses.loss.to_numpy">
+<span class="sig-prename descclassname"><span class="pre">arcana.losses.loss.</span></span><span class="sig-name descname"><span class="pre">to_numpy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_vector</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.losses.loss.to_numpy" title="Permalink to this definition"></a></dt>
+<dd><p>Convert x to a numpy array.
+If x is a tensor, detach it from the graph and move it to the cpu.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x_vector</strong> (<em>torch.Tensor</em><em> or </em><em>np.ndarray</em>) – input vector</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>np.ndarray</strong> – numpy array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="arcana.losses.loss.to_tensor">
+<span class="sig-prename descclassname"><span class="pre">arcana.losses.loss.</span></span><span class="sig-name descname"><span class="pre">to_tensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_vector</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.losses.loss.to_tensor" title="Permalink to this definition"></a></dt>
+<dd><p>Convert x to a tensor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x_vector</strong> (<em>torch.Tensor</em><em> or </em><em>np.ndarray</em>) – input vector</p></li>
+<li><p><strong>device</strong> (<em>torch.device</em>) – device to move the tensor to</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>torch.Tensor</strong> – tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-arcana.losses.loss_trace">
+<span id="arcana-losses-loss-trace-module"></span><h2>arcana.losses.loss_trace module<a class="headerlink" href="#module-arcana.losses.loss_trace" title="Permalink to this heading"></a></h2>
+<p>Class to trace the loss</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.losses.loss_trace.LossTrace">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.losses.loss_trace.</span></span><span class="sig-name descname"><span class="pre">LossTrace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_dim</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.losses.loss_trace.LossTrace" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class to trace the loss of the model during training and validation</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.losses.loss_trace.LossTrace.calculate_batch_loss_train">
+<span class="sig-name descname"><span class="pre">calculate_batch_loss_train</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_loss</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.losses.loss_trace.LossTrace.calculate_batch_loss_train" title="Permalink to this definition"></a></dt>
+<dd><p>Calculate the loss for each batch and add it to the loss_trace</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>train_loss</strong> (<em>torch.Tensor</em>) – loss for each batch</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.losses.loss_trace.LossTrace.calculate_batch_loss_validation">
+<span class="sig-name descname"><span class="pre">calculate_batch_loss_validation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">validation_loss</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.losses.loss_trace.LossTrace.calculate_batch_loss_validation" title="Permalink to this definition"></a></dt>
+<dd><p>Calculate the validation loss for each batch and add it to the loss_trace</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>validation_loss</strong> (<em>torch.Tensor</em>) – validation loss for each batch</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.losses.loss_trace.LossTrace.calculate_epoch_loss">
+<span class="sig-name descname"><span class="pre">calculate_epoch_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_loader</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val_loader</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.losses.loss_trace.LossTrace.calculate_epoch_loss" title="Permalink to this definition"></a></dt>
+<dd><p>Calculate the average loss for each epoch and add it to the loss_trace</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>train_loader</strong> (<em>torch.utils.data.DataLoader</em>) – training data loader</p></li>
+<li><p><strong>val_loader</strong> (<em>torch.utils.data.DataLoader</em>) – validation data loader</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.losses.loss_trace.LossTrace.reset_temp_loss_trace">
+<span class="sig-name descname"><span class="pre">reset_temp_loss_trace</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.losses.loss_trace.LossTrace.reset_temp_loss_trace" title="Permalink to this definition"></a></dt>
+<dd><p>Reset the temporary loss trace</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-arcana.losses">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-arcana.losses" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="arcana.logger.html" class="btn btn-neutral float-left" title="Arcana Logger" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="arcana.models.html" class="btn btn-neutral float-right" title="Arcana Models" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Fuzhan Rahmanian.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

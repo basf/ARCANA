@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arcana Plots &mdash; Arcana beta documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=88123126"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Arcana Prediction" href="arcana.prediction.html" />
+    <link rel="prev" title="Arcana Models: sequence_to_sequence" href="arcana.models.sequence_to_sequence.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Arcana
+          </a>
+              <div class="version">
+                0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">ARCANA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">arcana</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="arcana.html">Arcana package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="arcana.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="arcana.logger.html">Arcana Logger</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.losses.html">Arcana Losses</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.html">Arcana Models</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Arcana Plots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.prediction.html">Arcana Prediction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html">Arcana Procedures</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.processing.html">Arcana Processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.regularizations.html">Arcana Regularizations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.training.html">Arcana Training</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.utils.html">Arcana Utils</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.html#module-arcana">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Arcana</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">arcana</a></li>
+          <li class="breadcrumb-item"><a href="arcana.html">Arcana package</a></li>
+      <li class="breadcrumb-item active">Arcana Plots</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/arcana.plots.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="arcana-plots">
+<h1>Arcana Plots<a class="headerlink" href="#arcana-plots" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-arcana.plots.analysis_plot_utils">
+<span id="arcana-plots-analysis-plot-utils-module"></span><h2>arcana.plots.analysis_plot_utils module<a class="headerlink" href="#module-arcana.plots.analysis_plot_utils" title="Permalink to this heading"></a></h2>
+<p>This module contains the functions to plot the attention matrix for each head and the sensitivity analysis of the model.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.plots.analysis_plot_utils.AnalysisPlotUtils">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.plots.analysis_plot_utils.</span></span><span class="sig-name descname"><span class="pre">AnalysisPlotUtils</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arcana_procedure</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample_number</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.plots.analysis_plot_utils.AnalysisPlotUtils" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>AnalysisPlotUtils class to plot the attention matrix for each head and the sensitivity analysis of the model.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.plots.analysis_plot_utils.AnalysisPlotUtils.plot_additive_attention">
+<span class="sig-name descname"><span class="pre">plot_additive_attention</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attention_probs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arch_pointer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.plots.analysis_plot_utils.AnalysisPlotUtils.plot_additive_attention" title="Permalink to this definition"></a></dt>
+<dd><p>Plots the overall performance of the additive system on each sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>attention_probs</strong> (<em>tensor</em><em> or </em><em>np.array</em>) – Attention probabilities</p></li>
+<li><p><strong>arch_pointer</strong> (<em>str</em>) – The architecture pointer</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.plots.analysis_plot_utils.AnalysisPlotUtils.plot_all_multihead_attention">
+<span class="sig-name descname"><span class="pre">plot_all_multihead_attention</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attention_probs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arch_pointer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'encoder'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_idx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.plots.analysis_plot_utils.AnalysisPlotUtils.plot_all_multihead_attention" title="Permalink to this definition"></a></dt>
+<dd><p>Plots the attention matrix for each head and the overall performance of the model on each sequence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>attention_probs</strong> (<em>_type_</em>) – _description_</p></li>
+<li><p><strong>arch_pointer</strong> (<em>str</em><em>, </em><em>optional</em>) – _description_. Defaults to “encoder”.</p></li>
+<li><p><strong>batch_idx</strong> (<em>int</em><em>, </em><em>optional</em>) – _description_. Defaults to 0.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.plots.analysis_plot_utils.AnalysisPlotUtils.plot_sensitivity_analyis">
+<span class="sig-name descname"><span class="pre">plot_sensitivity_analyis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sensitivity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">future_step</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">available_sequence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.plots.analysis_plot_utils.AnalysisPlotUtils.plot_sensitivity_analyis" title="Permalink to this definition"></a></dt>
+<dd><p>Plots the sensitivity analysis of the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sensitivity</strong> (<em>tensor</em><em> or </em><em>np.array</em>) – Sensitivity analysis</p></li>
+<li><p><strong>future_step</strong> (<em>int</em>) – The future step</p></li>
+<li><p><strong>save_path</strong> (<em>str</em>) – The path to save the plot</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.plots.analysis_plot_utils.ScalarFormatterForceFormat">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.plots.analysis_plot_utils.</span></span><span class="sig-name descname"><span class="pre">ScalarFormatterForceFormat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">useOffset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useMathText</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useLocale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.plots.analysis_plot_utils.ScalarFormatterForceFormat" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ScalarFormatter</span></code></p>
+<p>ScalarFormatterForceFormat class to format the colorbar labels to scientific notation.
+Inherits from ScalarFormatter class from matplotlib.ticker.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ticker</strong> (<em>matplotlib.ticker.ScalarFormatter</em>) – ScalarFormatter class from matplotlib.ticker</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-arcana.plots.plot_utils">
+<span id="arcana-plots-plot-utils-module"></span><h2>arcana.plots.plot_utils module<a class="headerlink" href="#module-arcana.plots.plot_utils" title="Permalink to this heading"></a></h2>
+<p>This module contains the functions to plot the learning rate, the train and validation loss and the prediction of the model</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="arcana.plots.plot_utils.plot_model_learning_rate">
+<span class="sig-prename descclassname"><span class="pre">arcana.plots.plot_utils.</span></span><span class="sig-name descname"><span class="pre">plot_model_learning_rate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">learning_rate_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.plots.plot_utils.plot_model_learning_rate" title="Permalink to this definition"></a></dt>
+<dd><p>plot the learning rate of the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>learning_rate_dict</strong> (<em>dict</em>) – a dictionary containing the learning rate and epoch</p></li>
+<li><p><strong>plot_path</strong> (<em>str</em>) – the path to save the plot</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="arcana.plots.plot_utils.plot_sample_prediction">
+<span class="sig-prename descclassname"><span class="pre">arcana.plots.plot_utils.</span></span><span class="sig-name descname"><span class="pre">plot_sample_prediction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">original_sequence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean_prediction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">available_sequence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loss_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scores_prediction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample_number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">upper_prediction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lower_prediction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ylabels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.plots.plot_utils.plot_sample_prediction" title="Permalink to this definition"></a></dt>
+<dd><p>plot the prediction of the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>original_sequence</strong> (<em>np.array</em>) – the original sequence</p></li>
+<li><p><strong>mean_prediction</strong> (<em>np.array</em>) – the mean prediction of the model</p></li>
+<li><p><strong>available_sequence</strong> (<em>int</em>) – the length of the available sequence</p></li>
+<li><p><strong>plot_path</strong> (<em>str</em>) – the path to save the plot</p></li>
+<li><p><strong>loss_type</strong> (<em>str</em>) – the type of loss to plot</p></li>
+<li><p><strong>scores_prediction</strong> (<em>dict</em>) – a dictionary containing the scores of the prediction</p></li>
+<li><p><strong>uncertainty</strong> (<em>bool</em>) – whether to plot the uncertainty or not</p></li>
+<li><p><strong>random_index</strong> (<em>int</em>) – the random index of the sequence</p></li>
+<li><p><strong>upper_prediction</strong> (<em>np.array</em><em>, </em><em>optional</em>) – the upper prediction of the model. Defaults to None.</p></li>
+<li><p><strong>lower_prediction</strong> (<em>np.array</em><em>, </em><em>optional</em>) – the lower prediction of the model. Defaults to None.</p></li>
+<li><p><strong>ylabels</strong> (<em>list</em><em>, </em><em>optional</em>) – the labels of the y axis. Defaults to None.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="arcana.plots.plot_utils.plot_train_val_loss">
+<span class="sig-prename descclassname"><span class="pre">arcana.plots.plot_utils.</span></span><span class="sig-name descname"><span class="pre">plot_train_val_loss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">losses</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loss_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_loss_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'batch'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.plots.plot_utils.plot_train_val_loss" title="Permalink to this definition"></a></dt>
+<dd><p>plot the train and validation loss for epoch or batch</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>losses</strong> (<em>dict</em>) – a dictionary containing the train and validation loss</p></li>
+<li><p><strong>plot_path</strong> (<em>str</em>) – the path to save the plot</p></li>
+<li><p><strong>loss_type</strong> (<em>str</em>) – the type of loss to plot</p></li>
+<li><p><strong>train_loss_mode</strong> (<em>str</em><em>, </em><em>optional</em>) – the type of loss to plot. Defaults to “batch”.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="arcana.plots.plot_utils.plot_train_val_loss_individual">
+<span class="sig-prename descclassname"><span class="pre">arcana.plots.plot_utils.</span></span><span class="sig-name descname"><span class="pre">plot_train_val_loss_individual</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">losses</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loss_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_loss_mode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.plots.plot_utils.plot_train_val_loss_individual" title="Permalink to this definition"></a></dt>
+<dd><p>plot the train and validation loss for epoch or batch</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>losses</strong> (<em>dict</em>) – a dictionary containing the train and validation loss</p></li>
+<li><p><strong>plot_path</strong> (<em>str</em>) – the path to save the plot</p></li>
+<li><p><strong>loss_type</strong> (<em>str</em>) – the type of loss to plot</p></li>
+<li><p><strong>train_loss_mode</strong> (<em>str</em><em>, </em><em>optional</em>) – the type of dimension to plot.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-arcana.plots.plots">
+<span id="arcana-plots-plots-module"></span><h2>arcana.plots.plots module<a class="headerlink" href="#module-arcana.plots.plots" title="Permalink to this heading"></a></h2>
+<p>The general plottings with scientific format are described.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.plots.plots.Plots">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.plots.plots.</span></span><span class="sig-name descname"><span class="pre">Plots</span></span><a class="headerlink" href="#arcana.plots.plots.Plots" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>_General class for multipurpose plotting</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.plots.plots.Plots.plot_line">
+<span class="sig-name descname"><span class="pre">plot_line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.plots.plots.Plots.plot_line" title="Permalink to this definition"></a></dt>
+<dd><p>_General function for plotting line plots
+:param ax: matplotlib axes
+:type ax: matplotlib.axes._subplots.AxesSubplot
+:param x_values: x values
+:type x_values: np.array
+:param y_values: y values
+:type y_values: np.array
+:param legend_name: legend name. Defaults to None.
+:type legend_name: str
+:param color: color
+:type color: str</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.plots.plots.Plots.plot_scatter">
+<span class="sig-name descname"><span class="pre">plot_scatter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.plots.plots.Plots.plot_scatter" title="Permalink to this definition"></a></dt>
+<dd><p>_General function for plotting scatter plots
+:param ax: matplotlib axes
+:type ax: matplotlib.axes._subplots.AxesSubplot
+:param x_values: x values
+:type x_values: np.array
+:param y_values: y values
+:type y_values: np.array
+:param legend_name: legend name. Defaults to None.
+:type legend_name: str
+:param color: color
+:type color: str
+:param size: size. Defaults to 3.
+:type size: int</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.plots.plots.Plots.set_labels">
+<span class="sig-name descname"><span class="pre">set_labels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ax</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.plots.plots.Plots.set_labels" title="Permalink to this definition"></a></dt>
+<dd><p>_General function for setting labels
+:param ax: matplotlib axes
+:type ax: matplotlib.axes._subplots.AxesSubplot
+:param x_label: x label
+:type x_label: str
+:param y_label: y label
+:type y_label: str</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-arcana.plots">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-arcana.plots" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="arcana.models.sequence_to_sequence.html" class="btn btn-neutral float-left" title="Arcana Models: sequence_to_sequence" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="arcana.prediction.html" class="btn btn-neutral float-right" title="Arcana Prediction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Fuzhan Rahmanian.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

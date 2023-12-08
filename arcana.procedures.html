@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arcana Procedures &mdash; Arcana beta documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=88123126"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Arcana Processing" href="arcana.processing.html" />
+    <link rel="prev" title="Arcana Prediction" href="arcana.prediction.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Arcana
+          </a>
+              <div class="version">
+                0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">ARCANA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">arcana</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="arcana.html">Arcana package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="arcana.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="arcana.logger.html">Arcana Logger</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.losses.html">Arcana Losses</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.models.html">Arcana Models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.plots.html">Arcana Plots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.prediction.html">Arcana Prediction</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Arcana Procedures</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.processing.html">Arcana Processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.regularizations.html">Arcana Regularizations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.training.html">Arcana Training</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.utils.html">Arcana Utils</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.html#module-arcana">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Arcana</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">arcana</a></li>
+          <li class="breadcrumb-item"><a href="arcana.html">Arcana package</a></li>
+      <li class="breadcrumb-item active">Arcana Procedures</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/arcana.procedures.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="arcana-procedures">
+<h1>Arcana Procedures<a class="headerlink" href="#arcana-procedures" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-arcana.procedures.config_handler">
+<span id="arcana-procedures-config-handler-module"></span><h2>arcana.procedures.config_handler module<a class="headerlink" href="#module-arcana.procedures.config_handler" title="Permalink to this heading"></a></h2>
+<p>This module contains the ConfigHandler class which is used to read the config files and set the config dataclasses.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.ConfigHandler">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.procedures.config_handler.</span></span><span class="sig-name descname"><span class="pre">ConfigHandler</span></span><a class="headerlink" href="#arcana.procedures.config_handler.ConfigHandler" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Config handler class</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.ConfigHandler.get_data_config">
+<span class="sig-name descname"><span class="pre">get_data_config</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.config_handler.ConfigHandler.get_data_config" title="Permalink to this definition"></a></dt>
+<dd><p>Get the data config</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>DataConfig</strong> – data config</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.ConfigHandler.get_general_config">
+<span class="sig-name descname"><span class="pre">get_general_config</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.config_handler.ConfigHandler.get_general_config" title="Permalink to this definition"></a></dt>
+<dd><p>Get the general config</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>GeneralConfig</strong> – general config</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.ConfigHandler.get_model_config">
+<span class="sig-name descname"><span class="pre">get_model_config</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.config_handler.ConfigHandler.get_model_config" title="Permalink to this definition"></a></dt>
+<dd><p>Get the model config</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ModelConfig</strong> – model config</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.ConfigHandler.get_procedure_config">
+<span class="sig-name descname"><span class="pre">get_procedure_config</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.config_handler.ConfigHandler.get_procedure_config" title="Permalink to this definition"></a></dt>
+<dd><p>Get the procedure config</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ProcedureConfig</strong> – procedure config</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.DataConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.procedures.config_handler.</span></span><span class="sig-name descname"><span class="pre">DataConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_headers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number_of_samples</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_sample</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum_available_cycles</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_ratio</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val_test_ratio</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'config/general_parameter.ini'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.config_handler.DataConfig" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Data config dataclass</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.DataConfig.data_headers">
+<span class="sig-name descname"><span class="pre">data_headers</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#arcana.procedures.config_handler.DataConfig.data_headers" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.DataConfig.maximum_available_cycles">
+<span class="sig-name descname"><span class="pre">maximum_available_cycles</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#arcana.procedures.config_handler.DataConfig.maximum_available_cycles" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.DataConfig.number_of_samples">
+<span class="sig-name descname"><span class="pre">number_of_samples</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#arcana.procedures.config_handler.DataConfig.number_of_samples" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.DataConfig.path_to_config">
+<span class="sig-name descname"><span class="pre">path_to_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'config/general_parameter.ini'</span></em><a class="headerlink" href="#arcana.procedures.config_handler.DataConfig.path_to_config" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.DataConfig.test_sample">
+<span class="sig-name descname"><span class="pre">test_sample</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#arcana.procedures.config_handler.DataConfig.test_sample" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.DataConfig.train_ratio">
+<span class="sig-name descname"><span class="pre">train_ratio</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#arcana.procedures.config_handler.DataConfig.train_ratio" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.DataConfig.val_test_ratio">
+<span class="sig-name descname"><span class="pre">val_test_ratio</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#arcana.procedures.config_handler.DataConfig.val_test_ratio" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.GeneralConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.procedures.config_handler.</span></span><span class="sig-name descname"><span class="pre">GeneralConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_data_folder</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pretrained_model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scaler_model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'config/general_parameter.ini'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.config_handler.GeneralConfig" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>General config dataclass</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.GeneralConfig.data_name">
+<span class="sig-name descname"><span class="pre">data_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#arcana.procedures.config_handler.GeneralConfig.data_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.GeneralConfig.input_data_folder">
+<span class="sig-name descname"><span class="pre">input_data_folder</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#arcana.procedures.config_handler.GeneralConfig.input_data_folder" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.GeneralConfig.path_to_config">
+<span class="sig-name descname"><span class="pre">path_to_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'config/general_parameter.ini'</span></em><a class="headerlink" href="#arcana.procedures.config_handler.GeneralConfig.path_to_config" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.GeneralConfig.pretrained_model">
+<span class="sig-name descname"><span class="pre">pretrained_model</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#arcana.procedures.config_handler.GeneralConfig.pretrained_model" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.GeneralConfig.scaler_model">
+<span class="sig-name descname"><span class="pre">scaler_model</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#arcana.procedures.config_handler.GeneralConfig.scaler_model" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.GeneralConfig.test_id">
+<span class="sig-name descname"><span class="pre">test_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#arcana.procedures.config_handler.GeneralConfig.test_id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.ModelConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.procedures.config_handler.</span></span><span class="sig-name descname"><span class="pre">ModelConfig</span></span><a class="headerlink" href="#arcana.procedures.config_handler.ModelConfig" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Model config dataclass</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.ModelConfig.read_tuning_conf">
+<span class="sig-name descname"><span class="pre">read_tuning_conf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">trial</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.config_handler.ModelConfig.read_tuning_conf" title="Permalink to this definition"></a></dt>
+<dd><p>Read the tuning config file and set the model config attributes to the values in the config file
+:param trial: Trial object
+:type trial: optuna.trial.Trial</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.ProcedureConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.procedures.config_handler.</span></span><span class="sig-name descname"><span class="pre">ProcedureConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">naive_training</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">predicting</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preprocess_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optuna_tuning</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">learning_rate_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attention_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number_of_trials</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transfer_learning</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'config/general_parameter.ini'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.config_handler.ProcedureConfig" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Procedure config dataclass</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.ProcedureConfig.attention_type">
+<span class="sig-name descname"><span class="pre">attention_type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#arcana.procedures.config_handler.ProcedureConfig.attention_type" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.ProcedureConfig.learning_rate_type">
+<span class="sig-name descname"><span class="pre">learning_rate_type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#arcana.procedures.config_handler.ProcedureConfig.learning_rate_type" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.ProcedureConfig.naive_training">
+<span class="sig-name descname"><span class="pre">naive_training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#arcana.procedures.config_handler.ProcedureConfig.naive_training" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.ProcedureConfig.number_of_trials">
+<span class="sig-name descname"><span class="pre">number_of_trials</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#arcana.procedures.config_handler.ProcedureConfig.number_of_trials" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.ProcedureConfig.optuna_tuning">
+<span class="sig-name descname"><span class="pre">optuna_tuning</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#arcana.procedures.config_handler.ProcedureConfig.optuna_tuning" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.ProcedureConfig.path_to_config">
+<span class="sig-name descname"><span class="pre">path_to_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'config/general_parameter.ini'</span></em><a class="headerlink" href="#arcana.procedures.config_handler.ProcedureConfig.path_to_config" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.ProcedureConfig.predicting">
+<span class="sig-name descname"><span class="pre">predicting</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#arcana.procedures.config_handler.ProcedureConfig.predicting" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.ProcedureConfig.preprocess_data">
+<span class="sig-name descname"><span class="pre">preprocess_data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#arcana.procedures.config_handler.ProcedureConfig.preprocess_data" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="arcana.procedures.config_handler.ProcedureConfig.transfer_learning">
+<span class="sig-name descname"><span class="pre">transfer_learning</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#arcana.procedures.config_handler.ProcedureConfig.transfer_learning" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-arcana.procedures.predicting">
+<span id="arcana-procedures-predicting-module"></span><h2>arcana.procedures.predicting module<a class="headerlink" href="#module-arcana.procedures.predicting" title="Permalink to this heading"></a></h2>
+<p>This module is used to predict the model with the test data.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.procedures.predicting.PredictProcedure">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.procedures.predicting.</span></span><span class="sig-name descname"><span class="pre">PredictProcedure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arcana_procedure</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.predicting.PredictProcedure" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Predicting procedure</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.procedures.predicting.PredictProcedure.all_preparation">
+<span class="sig-name descname"><span class="pre">all_preparation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.predicting.PredictProcedure.all_preparation" title="Permalink to this definition"></a></dt>
+<dd><p>Prepare the data for the prediction</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.procedures.predicting.PredictProcedure.get_pretrained_model">
+<span class="sig-name descname"><span class="pre">get_pretrained_model</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.predicting.PredictProcedure.get_pretrained_model" title="Permalink to this definition"></a></dt>
+<dd><p>Get the pretrained model</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.procedures.predicting.PredictProcedure.get_test_data">
+<span class="sig-name descname"><span class="pre">get_test_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.predicting.PredictProcedure.get_test_data" title="Permalink to this definition"></a></dt>
+<dd><p>Get the test data</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.procedures.predicting.PredictProcedure.predicting">
+<span class="sig-name descname"><span class="pre">predicting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_folder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.predicting.PredictProcedure.predicting" title="Permalink to this definition"></a></dt>
+<dd><p>Predict the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>model_folder</strong> (<em>str</em>) – model folder. Default is None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.procedures.predicting.PredictProcedure.predicting_all">
+<span class="sig-name descname"><span class="pre">predicting_all</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fix_sequency_length</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_prediction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.predicting.PredictProcedure.predicting_all" title="Permalink to this definition"></a></dt>
+<dd><p>Predict the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fix_sequency_length</strong> (<em>int</em>) – the length of the available sequence</p></li>
+<li><p><strong>plot_prediction</strong> (<em>bool</em>) – whether to plot the prediction or not</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.procedures.predicting.PredictProcedure.preparation">
+<span class="sig-name descname"><span class="pre">preparation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.predicting.PredictProcedure.preparation" title="Permalink to this definition"></a></dt>
+<dd><p>Prepare the data for the prediction</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-arcana.procedures.training">
+<span id="arcana-procedures-training-module"></span><h2>arcana.procedures.training module<a class="headerlink" href="#module-arcana.procedures.training" title="Permalink to this heading"></a></h2>
+<p>This module is the main module for training the model. It contains the TrainProcedure class which is the main class</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.procedures.training.TrainProcedure">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.procedures.training.</span></span><span class="sig-name descname"><span class="pre">TrainProcedure</span></span><a class="headerlink" href="#arcana.procedures.training.TrainProcedure" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class is the main class for training the model. It contains some of the necessary functions for training,
+predicting and finetuning the model. The class also contains all the parameters for the training, predicting and
+tuning of the model. It also contains the functions for saving the model parameters and the
+data splits.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.procedures.training.TrainProcedure.data_splits">
+<span class="sig-name descname"><span class="pre">data_splits</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.training.TrainProcedure.data_splits" title="Permalink to this definition"></a></dt>
+<dd><p>Get the data splits for training, validation and testing</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.procedures.training.TrainProcedure.loader_initialization">
+<span class="sig-name descname"><span class="pre">loader_initialization</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.training.TrainProcedure.loader_initialization" title="Permalink to this definition"></a></dt>
+<dd><p>Initialize the data loaders</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.procedures.training.TrainProcedure.model_parameter_initialization">
+<span class="sig-name descname"><span class="pre">model_parameter_initialization</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.training.TrainProcedure.model_parameter_initialization" title="Permalink to this definition"></a></dt>
+<dd><p>Initialize the model parameters</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.procedures.training.TrainProcedure.save_data_splits">
+<span class="sig-name descname"><span class="pre">save_data_splits</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.training.TrainProcedure.save_data_splits" title="Permalink to this definition"></a></dt>
+<dd><p>Save the data splits</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.procedures.training.TrainProcedure.save_model_parameters">
+<span class="sig-name descname"><span class="pre">save_model_parameters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_folder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.training.TrainProcedure.save_model_parameters" title="Permalink to this definition"></a></dt>
+<dd><p>Save the model parameters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>model_folder</strong> (<em>str</em>) – Path to the model folder</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.procedures.training.TrainProcedure.set_device">
+<span class="sig-name descname"><span class="pre">set_device</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.training.TrainProcedure.set_device" title="Permalink to this definition"></a></dt>
+<dd><p>Set the device for training the model</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.procedures.training.TrainProcedure.train_element_initialization">
+<span class="sig-name descname"><span class="pre">train_element_initialization</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.training.TrainProcedure.train_element_initialization" title="Permalink to this definition"></a></dt>
+<dd><p>Initialize the training elements</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.procedures.training.TrainProcedure.training">
+<span class="sig-name descname"><span class="pre">training</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">trial</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_folder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.training.TrainProcedure.training" title="Permalink to this definition"></a></dt>
+<dd><p>Train the model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>trial</strong> (<em>optuna.trial.Trial</em>) – Trial object</p></li>
+<li><p><strong>model_folder</strong> (<em>str</em>) – Path to the model folder</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-arcana.procedures.tuning">
+<span id="arcana-procedures-tuning-module"></span><h2>arcana.procedures.tuning module<a class="headerlink" href="#module-arcana.procedures.tuning" title="Permalink to this heading"></a></h2>
+<p>This module contains the class for tuning the model. The tuning is done using the Optuna library.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.procedures.tuning.TuneProcedure">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.procedures.tuning.</span></span><span class="sig-name descname"><span class="pre">TuneProcedure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">procedure</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.tuning.TuneProcedure" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class is the main class for tuning the model. It contains some of the necessary functions for tuning the
+model. The class also contains all the parameters for the tuning of the model. It also contains the functions for
+saving the model parameters and the data splits. The Tuning is done using the Optuna library.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.procedures.tuning.TuneProcedure.rename_trials">
+<span class="sig-name descname"><span class="pre">rename_trials</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.tuning.TuneProcedure.rename_trials" title="Permalink to this definition"></a></dt>
+<dd><p>Rename the trials folders according to their state.
+Pruned trials are deleted.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.procedures.tuning.TuneProcedure.save_tuning_params">
+<span class="sig-name descname"><span class="pre">save_tuning_params</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.tuning.TuneProcedure.save_tuning_params" title="Permalink to this definition"></a></dt>
+<dd><p>Save the tuning parameters and the study</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.procedures.tuning.TuneProcedure.tuning">
+<span class="sig-name descname"><span class="pre">tuning</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.tuning.TuneProcedure.tuning" title="Permalink to this definition"></a></dt>
+<dd><p>Run the tuning. First create the study, then optimize the model, then prune the bad trials</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-arcana.procedures">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-arcana.procedures" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="arcana.prediction.html" class="btn btn-neutral float-left" title="Arcana Prediction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="arcana.processing.html" class="btn btn-neutral float-right" title="Arcana Processing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Fuzhan Rahmanian.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

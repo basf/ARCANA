@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arcana Models: sequence_to_sequence &mdash; Arcana beta documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=88123126"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Arcana Plots" href="arcana.plots.html" />
+    <link rel="prev" title="Arcana models: encoders" href="arcana.models.encoders.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Arcana
+          </a>
+              <div class="version">
+                0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">ARCANA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">arcana</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="arcana.html">Arcana package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="arcana.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="arcana.logger.html">Arcana Logger</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.losses.html">Arcana Losses</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="arcana.models.html">Arcana Models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.plots.html">Arcana Plots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.prediction.html">Arcana Prediction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.procedures.html">Arcana Procedures</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.processing.html">Arcana Processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.regularizations.html">Arcana Regularizations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.training.html">Arcana Training</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcana.utils.html">Arcana Utils</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arcana.html#module-arcana">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Arcana</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">arcana</a></li>
+          <li class="breadcrumb-item"><a href="arcana.html">Arcana package</a></li>
+          <li class="breadcrumb-item"><a href="arcana.models.html">Arcana Models</a></li>
+      <li class="breadcrumb-item active">Arcana Models: sequence_to_sequence</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/arcana.models.sequence_to_sequence.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="arcana-models-sequence-to-sequence">
+<h1>Arcana Models: sequence_to_sequence<a class="headerlink" href="#arcana-models-sequence-to-sequence" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-arcana.models.sequence_to_sequence.seq2seq_factory">
+<span id="arcana-models-sequence-to-sequence-seq2seq-factory-module"></span><h2>arcana.models.sequence_to_sequence.seq2seq_factory module<a class="headerlink" href="#module-arcana.models.sequence_to_sequence.seq2seq_factory" title="Permalink to this heading"></a></h2>
+<p>Factory class for creating Seq2Seq models.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.models.sequence_to_sequence.seq2seq_factory.Seq2SeqFactory">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.models.sequence_to_sequence.seq2seq_factory.</span></span><span class="sig-name descname"><span class="pre">Seq2SeqFactory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.models.sequence_to_sequence.seq2seq_factory.Seq2SeqFactory" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Factory class for creating Seq2Seq models.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.models.sequence_to_sequence.seq2seq_factory.Seq2SeqFactory.count_parameters">
+<span class="sig-name descname"><span class="pre">count_parameters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.models.sequence_to_sequence.seq2seq_factory.Seq2SeqFactory.count_parameters" title="Permalink to this definition"></a></dt>
+<dd><p>Count the number of trainable parameters in a model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>num_params</strong> (<em>int</em>) – The number of trainable parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.models.sequence_to_sequence.seq2seq_factory.Seq2SeqFactory.create_additive_model">
+<span class="sig-name descname"><span class="pre">create_additive_model</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.models.sequence_to_sequence.seq2seq_factory.Seq2SeqFactory.create_additive_model" title="Permalink to this definition"></a></dt>
+<dd><p>Create an additive model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>config</strong> (<em>dict</em>) – Dictionary containing the configuration parameters</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>seq2seq</strong> (<em>Seq2Seq</em>) – The additive model</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.models.sequence_to_sequence.seq2seq_factory.Seq2SeqFactory.create_multihead_model">
+<span class="sig-name descname"><span class="pre">create_multihead_model</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.models.sequence_to_sequence.seq2seq_factory.Seq2SeqFactory.create_multihead_model" title="Permalink to this definition"></a></dt>
+<dd><p>Create a multihead model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>seq2seq</strong> (<em>Seq2Seq</em>) – The multihead model</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.models.sequence_to_sequence.seq2seq_factory.Seq2SeqFactory.print_weights">
+<span class="sig-name descname"><span class="pre">print_weights</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">layer</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.models.sequence_to_sequence.seq2seq_factory.Seq2SeqFactory.print_weights" title="Permalink to this definition"></a></dt>
+<dd><p>Print the weights of a layer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>layer</strong> (<em>torch.nn.Module</em>) – The layer to print the weights of</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-arcana.models.sequence_to_sequence.sequence_to_sequence">
+<span id="arcana-models-sequence-to-sequence-sequence-to-sequence-module"></span><h2>arcana.models.sequence_to_sequence.sequence_to_sequence module<a class="headerlink" href="#module-arcana.models.sequence_to_sequence.sequence_to_sequence" title="Permalink to this heading"></a></h2>
+<p>Sequence to sequence model for time series forecasting</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="arcana.models.sequence_to_sequence.sequence_to_sequence.Seq2Seq">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">arcana.models.sequence_to_sequence.sequence_to_sequence.</span></span><span class="sig-name descname"><span class="pre">Seq2Seq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.models.sequence_to_sequence.sequence_to_sequence.Seq2Seq" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code></p>
+<p>Seq2Seq module</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="arcana.models.sequence_to_sequence.sequence_to_sequence.Seq2Seq.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source_lengths</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">teacher_forcing_ratio</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_position</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#arcana.models.sequence_to_sequence.sequence_to_sequence.Seq2Seq.forward" title="Permalink to this definition"></a></dt>
+<dd><p>Forward pass for seq2seq model. The forward pass is implemented as follows:
+1. get the encoder outputs
+2. iterate over the target sequence by specific window length
+3. get the prediction from the decoder
+4. concatenate the exogenous variables with the prediction
+5. store the prediction in a tensor</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>source</strong> (<em>torch.Tensor</em>) – source tensor (batch_size, seq_length, input_size)</p></li>
+<li><p><strong>target</strong> (<em>torch.Tensor</em>) – target tensor (batch_size, seq_length, output_size)</p></li>
+<li><p><strong>source_lengths</strong> (<em>torch.Tensor</em>) – source lengths (batch_size)</p></li>
+<li><p><strong>teacher_forcing_ratio</strong> (<em>float</em>) – teacher forcing ratio</p></li>
+<li><p><strong>start_position</strong> (<em>int</em>) – start position of the prediction</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>outputs</strong> (<em>torch.Tensor</em>) – outputs (num_quantiles, batch_size, seq_length, output_size)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-arcana.models.sequence_to_sequence">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-arcana.models.sequence_to_sequence" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="arcana.models.encoders.html" class="btn btn-neutral float-left" title="Arcana models: encoders" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="arcana.plots.html" class="btn btn-neutral float-right" title="Arcana Plots" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Fuzhan Rahmanian.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

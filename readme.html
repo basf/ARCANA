@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARCANA &mdash; Arcana beta documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=88123126"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="installation.html" />
+    <link rel="prev" title="Welcome to Arcana’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Arcana
+          </a>
+              <div class="version">
+                0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">ARCANA</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#features">Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#quick-start">Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#general-configuration">General Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#model-configuration">Model Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tuning-configuration">Tuning Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#architecture">Architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#citation">Citation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">arcana</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Arcana</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">ARCANA</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/readme.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="arcana">
+<h1>ARCANA<a class="headerlink" href="#arcana" title="Permalink to this heading"></a></h1>
+<a class="reference internal image-reference" href="figures/logo/logo.png"><img alt="figures/logo/logo.png" class="align-center" src="figures/logo/logo.png" style="width: 200px; height: 200px;" /></a>
+<p><strong>ARCANA: A</strong> ttention-based <strong>R</strong> e <strong>C</strong> urrent <strong>C</strong> ognitive <strong>A</strong> lgorithm for <strong>N</strong> eural <strong>A</strong> nalysis</p>
+<p>(Logo conceptualized and designed by Midjourney &lt;<a class="reference external" href="https://www.midjourney.com/">https://www.midjourney.com/</a>&gt;)</p>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
+<p>ARCANA is a Python package that implements, an LSTM-based Seq-to-Seq architecture with an integrated attention mechanism, designed for the early-stage analysis and lifecycle monitoring of battery degradation.</p>
+</section>
+<section id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this heading"></a></h2>
+<p>The model provides robust multi-task prediction capabilities through its modular design and the ability to dynamically adjust. It processes a wide range of historical battery cycle data to provide foundational insights for initial degradation detection. Incorporating predefined operational parameters, such as discharge rates and cycle numbers, ARCANA offers a dual analytical approach. This approach, coupled with the model’s inherent ability to include uncertainty in its predictions, presents ARCANA as an essential framework, which enhances the strategic development of battery maintenance protocols as well as reliability and longevity in energy storage applications.</p>
+</section>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h2>
+<p>For installation instructions, please refer to the [Installation Guide](docs/installation.rst) within the documentation directory.
+A quick start can be achieved by downloading the pip packages by running this command in your terminal:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>arcana
+</pre></div>
+</div>
+</section>
+<section id="quick-start">
+<h2>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this heading"></a></h2>
+<p>To begin using ARCANA for battery degradation analysis, configure the procedure parameters in the configuration files. The following possibilities are available:</p>
+<ol class="arabic simple">
+<li><p><strong>Training</strong>: If naive training is enabled in the configuration, ARCANA will start the training process using the provided dataset and model parameters.</p></li>
+<li><p><strong>Hyperparameter Tuning</strong>: If Optuna tuning is enabled, ARCANA will optimize the model’s hyperparameters using the <code class="code docutils literal notranslate"><span class="pre">TuneProcedure</span></code> for the specified number of trials.</p></li>
+<li><p><strong>Transfer Learning</strong>: If transfer learning is enabled, ARCANA will proceed with the fine-tuning of the pre-trained model using the strategy specified (e.g., <code class="code docutils literal notranslate"><span class="pre">decoder</span></code>).</p></li>
+<li><p><strong>Prediction</strong>: Finally, if the predicting flag is set, ARCANA will perform predictions on the pre-trained model for the provided data.</p></li>
+</ol>
+<p>Here is a sample code snippet to get you started:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">arcana.logger</span> <span class="kn">import</span> <span class="n">logger</span>
+<span class="kn">from</span> <span class="nn">arcana.procedures</span>  <span class="kn">import</span> <span class="n">training</span><span class="p">,</span> <span class="n">tuning</span><span class="p">,</span> <span class="n">predicting</span>
+<span class="kn">from</span> <span class="nn">arcana.procedures</span> <span class="kn">import</span> <span class="n">finetuning</span>
+
+<span class="n">logger</span><span class="o">.</span><span class="n">setup_applevel_logger</span><span class="p">(</span><span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;arcana_debug.log&quot;</span><span class="p">)</span>
+<span class="n">log</span> <span class="o">=</span> <span class="n">logger</span><span class="o">.</span><span class="n">get_logger</span><span class="p">(</span><span class="s2">&quot;arcana.main&quot;</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">run_test</span><span class="p">():</span>
+<span class="n">arcana_procedure</span> <span class="o">=</span> <span class="n">training</span><span class="o">.</span><span class="n">TrainProcedure</span><span class="p">()</span>
+<span class="k">if</span> <span class="n">arcana_procedure</span><span class="o">.</span><span class="n">procedure_config</span><span class="o">.</span><span class="n">naive_training</span><span class="p">:</span>
+     <span class="n">arcana_procedure</span><span class="o">.</span><span class="n">training</span><span class="p">()</span>
+
+<span class="k">if</span> <span class="n">arcana_procedure</span><span class="o">.</span><span class="n">procedure_config</span><span class="o">.</span><span class="n">transfer_learning</span><span class="p">:</span>
+     <span class="n">arcana_procedure</span> <span class="o">=</span> <span class="n">finetuning</span><span class="o">.</span><span class="n">FineTuning</span><span class="p">(</span><span class="n">tl_strategy</span><span class="o">=</span><span class="s2">&quot;decoder&quot;</span><span class="p">)</span>
+     <span class="k">if</span> <span class="ow">not</span> <span class="n">arcana_procedure</span><span class="o">.</span><span class="n">procedure_config</span><span class="o">.</span><span class="n">optuna_tuning</span><span class="p">:</span>
+          <span class="n">arcana_procedure</span><span class="o">.</span><span class="n">training</span><span class="p">()</span>
+
+<span class="k">if</span> <span class="n">arcana_procedure</span><span class="o">.</span><span class="n">procedure_config</span><span class="o">.</span><span class="n">optuna_tuning</span><span class="p">:</span>
+     <span class="n">tuning</span><span class="o">.</span><span class="n">TuneProcedure</span><span class="p">(</span><span class="n">procedure</span><span class="o">=</span><span class="n">arcana_procedure</span><span class="p">)</span><span class="o">.</span><span class="n">tuning</span><span class="p">()</span>
+
+<span class="k">if</span> <span class="n">arcana_procedure</span><span class="o">.</span><span class="n">procedure_config</span><span class="o">.</span><span class="n">predicting</span><span class="p">:</span>
+     <span class="n">predicting</span><span class="o">.</span><span class="n">PredictProcedure</span><span class="p">(</span><span class="n">arcana_procedure</span><span class="p">)</span><span class="o">.</span><span class="n">predicting</span><span class="p">()</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<span class="n">run_test</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Ensure that you have installed all required dependencies and have the necessary data prepared as per ARCANA’s input format.</p>
+</section>
+<section id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading"></a></h2>
+<p>ARCANA is designed to be flexible and adaptable to a wide range of scenarios in battery health prediction. To tailor the predictive modeling to your specific dataset and analytical needs, ARCANA utilizes two main configuration files: <code class="code docutils literal notranslate"><span class="pre">general_settings.ini</span></code> and <code class="code docutils literal notranslate"><span class="pre">model_parameters.ini</span></code>; adjust these configurations to match the characteristics of your battery data and the specificities of the analysis you intend to perform with ARCANA.</p>
+</section>
+<section id="general-configuration">
+<h2>General Configuration<a class="headerlink" href="#general-configuration" title="Permalink to this heading"></a></h2>
+<p>The <code class="code docutils literal notranslate"><span class="pre">general_config.ini</span></code> file serves as the central hub for setting up the main aspects of ARCANA. This configuration file is important for defining the workflow and data management for the predictive analysis. The following are the key sections and their respective parameters:</p>
+<ul class="simple">
+<li><p><strong>General Settings</strong>: This section captures the settings for the general workflow, including unique identifiers and paths to essential data and/or model files. It allows you to specify the location of input data, the name of the dataset, and paths to pre-trained models and scalers.</p></li>
+<li><p><strong>Data Specifications</strong>: Here, you can define the structure and specifics of your input data. Parameters include the headers of your dataset, the number of samples to consider, and the maximum number of cycles to use. Additionally, you can set the ratios for splitting your data into training, validation, and test sets.</p></li>
+<li><p><strong>Procedure Flags</strong>: This section allows you to toggle various procedural steps in ARCANA’s workflow. You can enable or disable naive training, prediction, data preprocessing, and hyperparameter tuning with Optuna.</p></li>
+<li><p><strong>Model Behavior</strong>: Adjust the learning rate type and attention mechanism type to suit your model’s learning strategy and the nature of your data.</p></li>
+<li><p><strong>Optimization and Tuning</strong>: Control the extent of hyperparameter optimization by setting the number of trials for Optuna.</p></li>
+</ul>
+</section>
+<section id="model-configuration">
+<h2>Model Configuration<a class="headerlink" href="#model-configuration" title="Permalink to this heading"></a></h2>
+<p>The <code class="code docutils literal notranslate"><span class="pre">model_parameters.ini</span></code> file defines the architecture and behavior of the LSTM-based predictive model. Below is an outline of the key parameters you can configure:</p>
+<ul class="simple">
+<li><p><strong>Model Settings</strong>: Define the input and output dimensions of your model, the loss function to be used, and the path to any tuning configurations. This section sets the foundational structure of your model.</p></li>
+<li><p><strong>Loss Functions</strong>: Customize the behavior of the loss function used during training. You can specify parameters for different losses, depending on the chosen <code class="code docutils literal notranslate"><span class="pre">loss_type</span></code>.</p></li>
+<li><p><strong>Optimizer</strong>: Set the learning rate and weight decay for the optimizer. These parameters are crucial for the convergence and generalization performance of the model.</p></li>
+<li><p><strong>Schedulers</strong>: Adjust the learning rate scheduling by defining factors for reduction or step sizes for cyclical learning rate adjustments. Proper configuration can lead to better training dynamics and faster convergence.</p></li>
+<li><p><strong>Model Parameters</strong>: Specify the number of epochs for training, the dimensions of the hidden layers, batch size, and other architectural features like bidirectionality and dropout rates. These parameters directly influence the model’s capacity to learn from data.</p></li>
+<li><p><strong>Encoder/Decoder</strong>: Fine-tune the encoder and decoder modules of the Seq-to-Seq model by setting dropout rates and the number of layers. This can help in managing the model’s complexity and its ability to capture temporal dependencies.</p></li>
+<li><p><strong>Multihead Attention</strong>: If your model uses a multihead attention mechanism, configure the number of attention heads for both the encoder and decoder. Attention heads allow the model to focus on different parts of the input sequence for better context understanding.</p></li>
+<li><p><strong>Early Stopping</strong>: Implement early stopping to prevent overfitting. You can define the criteria and patience level, which determines how long the training will continue without improvement in the validation metrics.</p></li>
+<li><p><strong>Teacher Forcing</strong>: Control the teacher forcing strategy during training, which can help in stabilizing and speeding up the training process. Set the start and end ratios, as well as the decay rate to manage how the model transitions from teacher-forced learning to autonomous predictions.</p></li>
+</ul>
+</section>
+<section id="tuning-configuration">
+<h2>Tuning Configuration<a class="headerlink" href="#tuning-configuration" title="Permalink to this heading"></a></h2>
+<p>The <code class="code docutils literal notranslate"><span class="pre">tuning_config.ini</span></code> file facilitates the hyperparameter optimization process to enhance model performance. It defines a range of values for various model parameters and training settings, allowing for a systematic exploration of the hyperparameter space. This includes configurations for loss functions, learning rates, model architecture specifics, and regularization techniques. The file is structured to allow for both discrete and continuous parameter tuning, in accordance with Optuna, with the ability to specify ranges and categorical choices.</p>
+</section>
+<section id="architecture">
+<h2>Architecture<a class="headerlink" href="#architecture" title="Permalink to this heading"></a></h2>
+<p>Here is a diagram of the ARCANA architecture as a simplified UML class diagram. The classes contain the main methods and attributes of the model delineated before.</p>
+<a class="reference internal image-reference" href="figures/UML_Complete_unmodified.png"><img alt="figures/UML_Complete_unmodified.png" class="align-center" src="figures/UML_Complete_unmodified.png" style="width: 1084px; height: 626px;" /></a>
+</section>
+<section id="citation">
+<h2>Citation<a class="headerlink" href="#citation" title="Permalink to this heading"></a></h2>
+<p>If you use ARCANA in your research, please cite the following paper, where you can also find its theoretical background and full description:</p>
+<p>Rahmanian, F. &amp; Lee R. M., &amp; Linzner, D. &amp; Michel, K. &amp; Merker, L. &amp; Berkes, B. &amp; Nuss, L. &amp; Stein, H.S. (2023). Attention towards chemistry agnostic and explainable battery lifetime prediction. Available at: [ChemRxiv] (Accessed: [08.12.2023]).</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to Arcana’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="installation.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Fuzhan Rahmanian.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
