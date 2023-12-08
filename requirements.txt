@@ -1,4 +1,4 @@
-joblib==1.0.1
+joblib==1.2.0
 matplotlib==3.3.4
 numpy==1.23.5
 optuna==3.4.0
