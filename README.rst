@@ -2,7 +2,7 @@
 ARCANA
 ======
 
-.. image:: figures/logo/logo.png
+.. image:: https://github.com/basf/ARCANA/blob/master/figures/logo/logo.png?raw=true
    :width: 200px
    :height: 200px
    :align: center
@@ -22,7 +22,7 @@ The model provides robust multi-task prediction capabilities through its modular
 
 Documentation
 -------------
-The documentation for ARCANA is available at [ARCANADocs](https://basf.github.io/ARCANA/).
+The documentation for ARCANA is available at `ARCANADocs <https://basf.github.io/ARCANA/>`_.
 
 
 Installation
@@ -32,7 +32,7 @@ A quick start can be achieved by downloading the pip packages by running this co
 
 .. code-block:: console
 
-    $ pip install arcana
+    $ pip install arcana-batt
 
 Quick Start
 -----------
@@ -129,7 +129,7 @@ Architecture
 ----------------------
 Here is a diagram of the ARCANA architecture as a simplified UML class diagram. The classes contain the main methods and attributes of the model delineated before.
 
-.. image:: figures/UML_Complete_unmodified.png
+.. image:: https://github.com/basf/ARCANA/blob/master/figures/UML_Complete_unmodified.png?raw=true
    :width: 1084px
    :height: 626px
    :align: center
@@ -138,6 +138,6 @@ Citation
 --------
 If you use ARCANA in your research, please cite the following paper, where you can also find its theoretical background and full description:
 
-Rahmanian, F. & Lee R. M., & Linzner, D. & Michel, K. & Merker, L. & Berkes, B. & Nuss, L. & Stein, H.S. (2023). Attention towards chemistry agnostic and explainable battery lifetime prediction. Available at: [ChemRxiv] (Accessed: [08.12.2023]).
+Rahmanian, F. & Lee R. M., & Linzner, D. & Michel, K. & Merker, L. & Berkes, B. & Nuss, L. & Stein, H.S. (2023). Attention towards chemistry agnostic and explainable battery lifetime prediction. Available at: `ChemRxiv <https://chemrxiv.org/engage/chemrxiv/public-dashboard>`_ (Accessed: [08.12.2023]).
 
 .. _ARCANA: https://github.com/basf/ARCANA
