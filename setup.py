@@ -12,35 +12,40 @@ with open('HISTORY.rst') as history_file:
 
 requirements = [ ]
 
-test_requirements = ['pytest>=3', ]
-
 setup(
     author="Fuzhan Rahmanian",
     author_email='fuzhanrahmanian@gmail.com',
     python_requires='>=3.6',
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
-        'Intended Audience :: Developers',
+        'Development Status :: 5 - Production/Stable',
+        'Environment :: GPU :: NVIDIA CUDA :: 11.0',
+        'Intended Audience :: Science/Research',
         'Natural Language :: English',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Operating System :: Microsoft :: Windows :: Windows 7',
+        'Operating System :: Microsoft :: Windows :: Windows 10',
+        'Operating System :: MacOS',
+        'Operating System :: POSIX :: Linux',
+        'Topic :: Scientific/Engineering :: Chemistry',
+        'Topic :: Scientific/Engineering :: Physics',
+        'Topic :: Scientific/Engineering :: Mathematics',
+        'Topic :: Scientific/Engineering :: Artificial Intelligence',
     ],
-    description="Package for estimation of the state of health prediction of battery materials",
+    description="Package for the estimation of early stage battery degradation mechanism and lifecycle monitoring",
     entry_points={
-        'console_scripts': [
-            'arcana=arcana.cli:main',
-        ],
     },
     install_requires=requirements,
+    license="MIT",
     long_description=readme + '\n\n' + history,
     include_package_data=True,
     keywords='arcana',
     name='arcana',
     packages=find_packages(include=['arcana', 'arcana.*']),
-    test_suite='tests',
-    tests_require=test_requirements,
     url="https://github.com/basf/ARCANA",
     version='1.0.0',
     zip_safe=False,

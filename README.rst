@@ -133,4 +133,6 @@ Citation
 --------
 If you use ARCANA in your research, please cite the following paper, where you can also find its theoretical background and full description:
 
+Rahmanian, F. & Lee R. M., & Linzner, D. & Michel, K. & Merker, L. & Berkes, B. & Nuss, L. & Stein, H.S. (2023). Attention towards chemistry agnostic and explainable battery lifetime prediction. Available at: [ChemRxiv] (Accessed: [08.12.2023]).
+
 .. _ARCANA: https://github.com/basf/ARCANA
