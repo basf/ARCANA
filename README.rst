@@ -82,11 +82,11 @@ Ensure that you have installed all required dependencies and have the necessary 
 
 Configuration
 -------------
-ARCANA is designed to be flexible and adaptable to a wide range of scenarios in battery health prediction. To tailor the predictive modeling to your specific dataset and analytical needs, ARCANA utilizes two main configuration files: :code:`general_settings.ini` and :code:`model_parameters.ini`; adjust these configurations to match the characteristics of your battery data and the specificities of the analysis you intend to perform with ARCANA.
+ARCANA is designed to be flexible and adaptable to a wide range of scenarios in battery health prediction. To tailor the predictive modeling to your specific dataset and analytical needs, ARCANA utilizes two main configuration files: :code:`general_parameter.ini` and :code:`model_parameter.ini`; adjust these configurations to match the characteristics of your battery data and the specificities of the analysis you intend to perform with ARCANA.
 
 General Configuration
 ---------------------
-The :code:`general_config.ini` file serves as the central hub for setting up the main aspects of ARCANA. This configuration file is important for defining the workflow and data management for the predictive analysis. The following are the key sections and their respective parameters:
+The :code:`general_parameter.ini` file serves as the central hub for setting up the main aspects of ARCANA. This configuration file is important for defining the workflow and data management for the predictive analysis. The following are the key sections and their respective parameters:
 
 - **General Settings**: This section captures the settings for the general workflow, including unique identifiers and paths to essential data and/or model files. It allows you to specify the location of input data, the name of the dataset, and paths to pre-trained models and scalers.
 
@@ -100,7 +100,7 @@ The :code:`general_config.ini` file serves as the central hub for setting up the
 
 Model Configuration
 -------------------
-The :code:`model_parameters.ini` file defines the architecture and behavior of the LSTM-based predictive model. Below is an outline of the key parameters you can configure:
+The :code:`model_parameter.ini` file defines the architecture and behavior of the LSTM-based predictive model. Below is an outline of the key parameters you can configure:
 
 - **Model Settings**: Define the input and output dimensions of your model, the loss function to be used, and the path to any tuning configurations. This section sets the foundational structure of your model.
 
@@ -122,7 +122,7 @@ The :code:`model_parameters.ini` file defines the architecture and behavior of t
 
 Tuning Configuration
 --------------------
-The :code:`tuning_config.ini` file facilitates the hyperparameter optimization process to enhance model performance. It defines a range of values for various model parameters and training settings, allowing for a systematic exploration of the hyperparameter space. This includes configurations for loss functions, learning rates, model architecture specifics, and regularization techniques. The file is structured to allow for both discrete and continuous parameter tuning, in accordance with Optuna, with the ability to specify ranges and categorical choices.
+The :code:`tuning_parameter.ini` file facilitates the hyperparameter optimization process to enhance model performance. It defines a range of values for various model parameters and training settings, allowing for a systematic exploration of the hyperparameter space. This includes configurations for loss functions, learning rates, model architecture specifics, and regularization techniques. The file is structured to allow for both discrete and continuous parameter tuning, in accordance with Optuna, with the ability to specify ranges and categorical choices.
 
 
 Architecture
