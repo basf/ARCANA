@@ -163,11 +163,11 @@ A quick start can be achieved by downloading the pip packages by running this co
 </section>
 <section id="configuration">
 <h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading"></a></h2>
-<p>ARCANA is designed to be flexible and adaptable to a wide range of scenarios in battery health prediction. To tailor the predictive modeling to your specific dataset and analytical needs, ARCANA utilizes two main configuration files: <code class="code docutils literal notranslate"><span class="pre">general_settings.ini</span></code> and <code class="code docutils literal notranslate"><span class="pre">model_parameters.ini</span></code>; adjust these configurations to match the characteristics of your battery data and the specificities of the analysis you intend to perform with ARCANA.</p>
+<p>ARCANA is designed to be flexible and adaptable to a wide range of scenarios in battery health prediction. To tailor the predictive modeling to your specific dataset and analytical needs, ARCANA utilizes two main configuration files: <code class="code docutils literal notranslate"><span class="pre">general_parameter.ini</span></code> and <code class="code docutils literal notranslate"><span class="pre">model_parameter.ini</span></code>; adjust these configurations to match the characteristics of your battery data and the specificities of the analysis you intend to perform with ARCANA.</p>
 </section>
 <section id="general-configuration">
 <h2>General Configuration<a class="headerlink" href="#general-configuration" title="Permalink to this heading"></a></h2>
-<p>The <code class="code docutils literal notranslate"><span class="pre">general_config.ini</span></code> file serves as the central hub for setting up the main aspects of ARCANA. This configuration file is important for defining the workflow and data management for the predictive analysis. The following are the key sections and their respective parameters:</p>
+<p>The <code class="code docutils literal notranslate"><span class="pre">general_parameter.ini</span></code> file serves as the central hub for setting up the main aspects of ARCANA. This configuration file is important for defining the workflow and data management for the predictive analysis. The following are the key sections and their respective parameters:</p>
 <ul class="simple">
 <li><p><strong>General Settings</strong>: This section captures the settings for the general workflow, including unique identifiers and paths to essential data and/or model files. It allows you to specify the location of input data, the name of the dataset, and paths to pre-trained models and scalers.</p></li>
 <li><p><strong>Data Specifications</strong>: Here, you can define the structure and specifics of your input data. Parameters include the headers of your dataset, the number of samples to consider, and the maximum number of cycles to use. Additionally, you can set the ratios for splitting your data into training, validation, and test sets.</p></li>
@@ -178,7 +178,7 @@ A quick start can be achieved by downloading the pip packages by running this co
 </section>
 <section id="model-configuration">
 <h2>Model Configuration<a class="headerlink" href="#model-configuration" title="Permalink to this heading"></a></h2>
-<p>The <code class="code docutils literal notranslate"><span class="pre">model_parameters.ini</span></code> file defines the architecture and behavior of the LSTM-based predictive model. Below is an outline of the key parameters you can configure:</p>
+<p>The <code class="code docutils literal notranslate"><span class="pre">model_parameter.ini</span></code> file defines the architecture and behavior of the LSTM-based predictive model. Below is an outline of the key parameters you can configure:</p>
 <ul class="simple">
 <li><p><strong>Model Settings</strong>: Define the input and output dimensions of your model, the loss function to be used, and the path to any tuning configurations. This section sets the foundational structure of your model.</p></li>
 <li><p><strong>Loss Functions</strong>: Customize the behavior of the loss function used during training. You can specify parameters for different losses, depending on the chosen <code class="code docutils literal notranslate"><span class="pre">loss_type</span></code>.</p></li>
@@ -193,7 +193,7 @@ A quick start can be achieved by downloading the pip packages by running this co
 </section>
 <section id="tuning-configuration">
 <h2>Tuning Configuration<a class="headerlink" href="#tuning-configuration" title="Permalink to this heading"></a></h2>
-<p>The <code class="code docutils literal notranslate"><span class="pre">tuning_config.ini</span></code> file facilitates the hyperparameter optimization process to enhance model performance. It defines a range of values for various model parameters and training settings, allowing for a systematic exploration of the hyperparameter space. This includes configurations for loss functions, learning rates, model architecture specifics, and regularization techniques. The file is structured to allow for both discrete and continuous parameter tuning, in accordance with Optuna, with the ability to specify ranges and categorical choices.</p>
+<p>The <code class="code docutils literal notranslate"><span class="pre">tuning_parameter.ini</span></code> file facilitates the hyperparameter optimization process to enhance model performance. It defines a range of values for various model parameters and training settings, allowing for a systematic exploration of the hyperparameter space. This includes configurations for loss functions, learning rates, model architecture specifics, and regularization techniques. The file is structured to allow for both discrete and continuous parameter tuning, in accordance with Optuna, with the ability to specify ranges and categorical choices.</p>
 </section>
 <section id="architecture">
 <h2>Architecture<a class="headerlink" href="#architecture" title="Permalink to this heading"></a></h2>
