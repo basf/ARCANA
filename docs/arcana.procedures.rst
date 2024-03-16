@@ -1,4 +1,4 @@
-Arcana Procedures
+Arcana Processing
 =========================
 
 Submodules
@@ -8,6 +8,14 @@ arcana.procedures.config\_handler module
 ----------------------------------------
 
 .. automodule:: arcana.procedures.config_handler
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+arcana.procedures.finetuning module
+-----------------------------------
+
+.. automodule:: arcana.procedures.finetuning
    :members:
    :undoc-members:
    :show-inheritance:
