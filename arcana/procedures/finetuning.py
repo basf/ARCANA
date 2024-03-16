@@ -30,21 +30,15 @@ class FineTuning(TrainProcedure):
 
 
     def unfreeze_decoder(self):
-        """Freeze the encoder"""
-        
-        list_to_unfreeze = ["encoder.lstm.weight_ih_l2",
-                            "encoder.lstm.weight_hh_l2",
-                            "encoder.lstm.bias_ih_l2",
-                            "encoder.lstm.bias_hh_l2"]
-        
+        """Unfreeze the encoder"""
         for param in self.pretrained_model.parameters():
             param.requires_grad = False
-        for name, param in self.pretrained_model.named_parameters():
-            if name in list_to_unfreeze:
-                param.requires_grad = True
+        for _, param in self.pretrained_model.decoder.named_parameters():
+            param.requires_grad = True
+
 
     def unfreeze_fully_connected(self):
-        """Freeze the fully connected layer"""
+        """Unfreeze the fully connected layer"""
         for param in self.pretrained_model.parameters():
             param.requires_grad = False
         for param in self.pretrained_model.decoder.fc_layer_pred_1.parameters():
