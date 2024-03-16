@@ -25,12 +25,12 @@ class FineTuning(TrainProcedure):
 
 
     def load_model(self):
-        """Load the model from the path"""
+        """Load the pre-trained model from the path"""
         return torch.load(self.general_config.pretrained_model)
 
 
     def unfreeze_decoder(self):
-        """Unfreeze the encoder"""
+        """Unfreeze the decoder layer by making the autograd true for the decoder layer parameters."""
         for param in self.pretrained_model.parameters():
             param.requires_grad = False
         for _, param in self.pretrained_model.decoder.named_parameters():
@@ -38,7 +38,7 @@ class FineTuning(TrainProcedure):
 
 
     def unfreeze_fully_connected(self):
-        """Unfreeze the fully connected layer"""
+        """Unfreeze the fully connected layer by making the autograd true for the parameters."""
         for param in self.pretrained_model.parameters():
             param.requires_grad = False
         for param in self.pretrained_model.decoder.fc_layer_pred_1.parameters():
@@ -50,7 +50,7 @@ class FineTuning(TrainProcedure):
 
 
     def unfreeze_fc_and_attention(self):
-        """Freeze the fully connected layer and the attention layer in the decoder"""
+        """Unfreeze the fully connected layer and the attention layer in the decoder by making the autograd true for the parameters."""
         # FIXME: fix the attention for multihead
         self.unfreeze_fully_connected()
         for name, param in self.pretrained_model.decoder.named_parameters():
