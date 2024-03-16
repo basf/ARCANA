@@ -320,7 +320,7 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="arcana.procedures.finetuning.FineTuning.load_model">
 <span class="sig-name descname"><span class="pre">load_model</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.finetuning.FineTuning.load_model" title="Permalink to this definition"></a></dt>
-<dd><p>Load the model from the path</p>
+<dd><p>Load the pre-trained model from the path</p>
 </dd></dl>
 
 <dl class="py method">
@@ -340,19 +340,19 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="arcana.procedures.finetuning.FineTuning.unfreeze_decoder">
 <span class="sig-name descname"><span class="pre">unfreeze_decoder</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.finetuning.FineTuning.unfreeze_decoder" title="Permalink to this definition"></a></dt>
-<dd><p>Unfreeze the encoder</p>
+<dd><p>Unfreeze the decoder layer by making the autograd true for the decoder layer parameters.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="arcana.procedures.finetuning.FineTuning.unfreeze_fc_and_attention">
 <span class="sig-name descname"><span class="pre">unfreeze_fc_and_attention</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.finetuning.FineTuning.unfreeze_fc_and_attention" title="Permalink to this definition"></a></dt>
-<dd><p>Freeze the fully connected layer and the attention layer in the decoder</p>
+<dd><p>Unfreeze the fully connected layer and the attention layer in the decoder by making the autograd true for the parameters.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="arcana.procedures.finetuning.FineTuning.unfreeze_fully_connected">
 <span class="sig-name descname"><span class="pre">unfreeze_fully_connected</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arcana.procedures.finetuning.FineTuning.unfreeze_fully_connected" title="Permalink to this definition"></a></dt>
-<dd><p>Unfreeze the fully connected layer</p>
+<dd><p>Unfreeze the fully connected layer by making the autograd true for the parameters.</p>
 </dd></dl>
 
 </dd></dl>
