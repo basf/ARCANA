@@ -60,6 +60,7 @@ class FineTuning(TrainProcedure):
     def training(self, trial=None, model_folder = None):
         #FIXME:fix the docstring
         """Finetune the model depending on the transfer learning strategy
+
         Args:
             trial (optuna.trial): optuna trial
             model_folder (str): model folder
